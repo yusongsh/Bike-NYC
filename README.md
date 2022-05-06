@@ -16,7 +16,7 @@
 </p>
 <div align="center">
   
-  [![Figma](https://img.shields.io/badge/-figma-%231B1F22.svg?style=for-the-badge&logo=figma&logoColor=FFFFFF)](https://www.figma.com)
+  [![Figma](https://img.shields.io/badge/-figma-%231B1F22.svg?style=for-the-badge&logo=figma&logoColor=FFFFFF)](https://www.figma.com/proto/Iy9jKtS96TfybPHZSwndzo/Bike-NYC---P4?page-id=0%3A1&node-id=3%3A2&viewport=273%2C48%2C0.18&scaling=scale-down&starting-point-node-id=3%3A2)
   [![Trello](https://img.shields.io/badge/-Trello-0052CC?style=for-the-badge&logo=Trello&logoColor=FFFFFF)](https://trello.com/b/pse5mXnf/bike-nyc)
 
 </div>
