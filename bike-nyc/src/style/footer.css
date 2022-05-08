@@ -1,0 +1,32 @@
+.marquee {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height:8vh;
+    margin: auto;
+    overflow-x: hidden;
+  }
+  
+  .track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    border-top: 1vh solid #001e1d;
+    animation: marquee 80s linear infinite;
+  }
+  
+  .track p {
+    font-size: 18px;
+    margin: 0;
+    font-weight: 500;
+    top:50%;
+    text-transform: uppercase;
+  }
+
+  
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  
+  
