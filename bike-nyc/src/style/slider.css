@@ -3,7 +3,6 @@
     margin: auto;
   }
   
-  
   .each-slide > div {
     display: flex;
     align-items: center;
@@ -15,7 +14,7 @@
   .each-slide span {
     padding: 20px;
     font-size: 20px;
-    background: #efefef;
+    backgroun: #efefef;
     text-align: center;
   }
   
@@ -41,18 +40,19 @@
     background: #adceed;
   }
   
-  .indicator {
-    width: 30px;
-    color: blue;
-    text-align: center;
-    cursor: pointer;
-    border: 1px blue solid;
-  }
-  .indicator.active {
-    background: #000;
-    color: #fff;
-  }
   
   .image2{
-    height: 50vh;
+    width: 50vw;
+    height: 60vh;
+    object-fit: cover;
+  }
+
+  button{
+    padding: 15px 25px;
+    border: 6px solid #001e1d;
+    background-color: #fffffe;
+    font-size: 20px;
+    font-weight:500;
+    position: absolute;
+    bottom: 8vh;
   }

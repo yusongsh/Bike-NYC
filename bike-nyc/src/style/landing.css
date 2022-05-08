@@ -25,7 +25,7 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    border-right: 8px solid #001e1d;
+    border-right: 1vh solid #001e1d;
 }
 .left-top1 h1 {
     font-size: 6vw;
@@ -35,8 +35,12 @@
 .left-top2 {
     flex:30%;
 }
-.left-top2 h5 {
+.left-top2 h5,
+.right-top1 h5 {
     margin-top: 10px;
+    font-size: 20px;
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }
 .weatherhere {
     display: flex;
@@ -46,5 +50,62 @@
     background-color: black;
     height: 30px;
     width: 60px;
-    
+}
+
+.landing-right {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+
+.landing-right-top {
+    display: flex;
+    flex-direction: row;
+    height: 45vh;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 1vh solid #001e1d;
+}
+
+.right-top1{
+    flex: 90%;
+}
+
+.right-top2{
+    flex: 10%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9bc60;
+    border-left: 1vh solid #001e1d;
+}
+.rotate{
+    /* transform: rotate(90deg); */
+    display: flex;
+    padding-top:2em;
+    justify-content: space-around;
+}
+.right-top1-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.path-info {
+    background-color:salmon;
+    margin: 20px;
+    padding: 20px;
+}
+
+.path-info p {
+    font-size: 14px;
+    margin: 6px;
+}
+.path-info h4 {
+    font-size: 16px;
+    margin:10px
+}
+.path-info img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
 }

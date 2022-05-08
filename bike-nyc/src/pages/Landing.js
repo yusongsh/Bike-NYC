@@ -3,6 +3,9 @@ import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 import Slider from '../components/Slider'
 import '../style/landing.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
+import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons"
 
 function Landing() {
   return (
@@ -26,8 +29,28 @@ function Landing() {
 
         <div className='landing-right'>
             <div className='landing-right-top'>
-                <div className='right-top1'></div>
-                <div className='right-top2'></div>
+                <div className='right-top1'>
+                    <h5>Featured Paths</h5>
+                    <div className='right-top1-card'>
+                        <div className='path-info'>
+                            <img src='../assest/img-2.png' alt=''/>
+                            <h4>Central Park Loop</h4>
+                            <p>Length: 6.1mi</p>
+                            <p>Elevation gain: 232ft</p>
+                        </div>
+                        <div className='path-info'>
+                            <img src='../assest/img-3.png' alt=''/> 
+                            <h4>Hudson River Greenway</h4>
+                            <p>Length: 6.1mi</p>
+                            <p>Elevation gain: 232ft</p>
+                        </div>
+                    </div>
+                </div>
+                <div className='right-top2'>
+                    <FontAwesomeIcon className='rotate' icon={faLinkedinIn} size='2x' />
+                    <FontAwesomeIcon className='rotate' icon={faGithub} size='2x'/>
+                    <FontAwesomeIcon className='rotate' icon={faEnvelope} size='2x' />
+                </div>
             </div>
             <div className='landing-right-bottom'>
                 <div className='right-bottom1'></div>

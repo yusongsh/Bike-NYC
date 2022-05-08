@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import { Slide } from "react-slideshow-image";
 import "../style/slider.css";
 import "react-slideshow-image/dist/styles.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRightLong, faArrowLeftLong } from "@fortawesome/free-solid-svg-icons"
+
 
 class Slider extends Component {
   constructor() {
@@ -33,10 +36,10 @@ class Slider extends Component {
     //   indicators: (i) => <div className="indicator">{i + 1}</div>
     };
     const slideImages = [
-      "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
-      "https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80",
-      "https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
-      "https://images.unsplash.com/photo-1444525873963-75d329ef9e1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
+        "https://images.unsplash.com/photo-1512075337258-1365ab103c53?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        "https://images.unsplash.com/photo-1517416759101-67e64aeb3138?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80",
+        "https://images.unsplash.com/photo-1491796064419-c7a3c193a201?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1373&q=80",
+        "https://images.unsplash.com/photo-1622734547484-e16f9c78f1bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
     ];
     return (
       <div className="Slider">
@@ -48,15 +51,16 @@ class Slider extends Component {
               </div>
             ))}
           </Slide>
+          {/* <button onClick={this.back} type="button">
+             <FontAwesomeIcon icon={faArrowLeftLong} />
+          </button> */}
+          <button onClick={this.next} type="button">
+            <FontAwesomeIcon icon={faArrowRightLong} />
+          </button>
         </div>
 
         <div className="slide-container buttons">
-          <button onClick={this.back} type="button">
-            Go Back
-          </button>
-          <button onClick={this.next} type="button">
-            Go Next
-          </button>
+          
         </div>
       </div>
     );
