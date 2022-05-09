@@ -1,6 +1,6 @@
 from rest_framework import generics
-from .serializers import ParkSerializer, BikesSerializer, PathSerializer
-from .models import Park, Path, Bikes
+from .serializers import ParkSerializer, BikesSerializer, PathSerializer, ReviewSerializer
+from .models import Park, Path, Bikes, Review
 
 
 class ParkList(generics.ListCreateAPIView):
@@ -33,11 +33,11 @@ class PathDetail(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = PathSerializer
 
 
-# class ReviewList(generics.ListCreateAPIView):
-#     queryset = Review.objects.all()
-#     serializer_class = ReviewSerializer
+class ReviewList(generics.ListCreateAPIView):
+    queryset = Review.objects.all()
+    serializer_class = ReviewSerializer
 
 
-# class ReviewDetail(generics.RetrieveUpdateDestroyAPIView):
-#     queryset = Review.objects.all()
-#     serializer_class = ReviewSerializer
+class ReviewDetail(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Review.objects.all()
+    serializer_class = ReviewSerializer

@@ -1,9 +1,9 @@
 from django.contrib import admin
 
 # Register your models here.
-from .models import Park, Path, Bikes
+from .models import Park, Path, Bikes, Review
 
 admin.site.register(Park)
 admin.site.register(Path)
-# admin.site.register(Review)
+admin.site.register(Review)
 admin.site.register(Bikes)

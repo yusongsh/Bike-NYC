@@ -28,14 +28,14 @@ class Path(models.Model):
         return self.name
 
 
-# class Review(models.Model):
-#     path = models.ForeignKey(
-#         Path, on_delete=models.CASCADE, related_name='review')
-#     name = models.CharField(max_length=100)
-#     description = models.TextField()
+class Review(models.Model):
+    path = models.ForeignKey(
+        Path, on_delete=models.CASCADE, related_name='reviews')
+    name = models.CharField(max_length=100)
+    description = models.TextField()
 
-#     def __str__(self):
-#         return self.name
+    def __str__(self):
+        return self.name
 
 
 class Bikes(models.Model):
