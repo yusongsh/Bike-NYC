@@ -1,0 +1,4 @@
+-- settings.sql
+CREATE DATABASE bike;
+CREATE USER bikeuser WITH PASSWORD 'bike';
+GRANT ALL PRIVILEGES ON DATABASE bike TO bikeuser;
