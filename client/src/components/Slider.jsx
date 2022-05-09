@@ -5,7 +5,8 @@ import "react-slideshow-image/dist/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightLong, faArrowLeftLong } from "@fortawesome/free-solid-svg-icons"
 
-
+// https://www.npmjs.com/package/react-slideshow-image
+// This slider is from the website npmjs.com
 class Slider extends Component {
   constructor() {
     super();

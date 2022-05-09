@@ -1,24 +1,23 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import '../style/nav.css'
+import '../style/nav1.css'
 
-
-function nav() {
+function Nav1() {
   return (
-    <div className='nav'>
-        <div className='left'></div>
-        <div className='middle'>
+    <div className='nav1'>
+        <div className='nav-left'>
             <Link to=''>Explore</Link>
             <Link to=''>Learn</Link>
             <Link to=''>Shop</Link>
-            <div class='spiralContainer'><div class='spiral'></div></div>
         </div>
-        <div className='right'>
+        <div className='nav-middle'>
+            <Link to=''>BIKE NYC</Link>
+        </div>
+        <div className='nav-right'>
             <Link to=''>Contact</Link>
         </div>
     </div>
   )
 }
 
-
-export default nav
+export default Nav1
