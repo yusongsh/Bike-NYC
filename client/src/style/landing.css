@@ -3,13 +3,15 @@
     /* width: 100vw; */
     display: flex;
 }
+
 .landing-left {
     display: flex;
     width: 50%;
     flex-direction: column;
-    /* background-color: red; */
+    background-color: #abd1c6;
     border-right: 8px solid #001e1d;
 }
+
 .landing-left-top {
     display: flex;
     height: 20vh;
@@ -20,21 +22,23 @@
 }
 
 .left-top1 {
-    flex:70%; 
+    flex: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
     border-right: 1vh solid #001e1d;
 }
+
 .left-top1 h1 {
     font-size: 6vw;
     text-transform: uppercase;
 }
 
 .left-top2 {
-    flex:30%;
+    flex: 30%;
 }
+
 .left-top2 h5,
 .right-top1 h5,
 .right-bottom1 h5,
@@ -44,6 +48,7 @@
     text-decoration: underline;
     text-underline-offset: 3px;
 }
+
 .weatherhere {
     display: flex;
     justify-content: center;
@@ -69,29 +74,32 @@
     border-bottom: 1vh solid #001e1d;
 }
 
-.right-top1{
+.right-top1 {
     flex: 90%;
 }
 
-.right-top2{
+.right-top2 {
     flex: 10%;
     display: flex;
     flex-direction: column;
     background-color: #f9bc60;
     border-left: 1vh solid #001e1d;
 }
-.right-top2 a{
+
+.right-top2 a {
     /* transform: rotate(90deg); */
     display: flex;
-    padding-top:8vh;
+    padding-top: 8vh;
     justify-content: space-around;
     color: #001e1d;
 }
+
 .right-top1-card {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+
 .right-top1-card a {
     text-decoration: none;
     color: #001e1d;
@@ -100,7 +108,7 @@
 .path-info {
     width: 16vw;
     height: 31vh;
-    background-color:#abd1c6;
+    background-color: #abd1c6;
     margin: 2vh;
     box-shadow: 2px 2px 10px 2px rgb(0, 30, 29, .2);
     /* border: .5vh solid #001e1d; */
@@ -111,12 +119,14 @@
     margin: 6px;
     /* color: #fffffe; */
 }
+
 .path-info h4 {
     padding-top: 1vh;
     font-size: 16px;
-    margin:10px;
+    margin: 10px;
     /* color: #fffffe; */
 }
+
 .path-info img {
     height: 20vh;
     width: 100%;
@@ -142,9 +152,11 @@
 .right-bottom2 h2 {
     font-size: 42px;
 }
-.right-bottom1{
+
+.right-bottom1 {
     border-right: 1vh solid #001e1d;
 }
+
 .right-bottom2 {
     display: flex;
     flex-direction: column;
@@ -157,25 +169,27 @@
 .bottom2-bottom {
     border-top: 1vh solid #001e1d;
 }
+
 .bottom2-bottom h2 {
     margin: 1.5vh;
 }
 
 
-.animated{
-  background: url('https://images.unsplash.com/photo-1543158266-0066955047b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80') no-repeat;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  animation: moveBg 50s linear infinite;
-  -webkit-animation: moveBg 50s linear infinite;
+.animated {
+    background: url('https://images.unsplash.com/photo-1543158266-0066955047b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80') no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: moveBg 50s linear infinite;
+    -webkit-animation: moveBg 50s linear infinite;
 }
 
-@keyframes moveBg{
-  0% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 30%;
-  }
+@keyframes moveBg {
+    0% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 30%;
+    }
 }

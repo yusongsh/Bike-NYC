@@ -1,12 +1,25 @@
 .nav1 {
     position: sticky;
-    height: 10vh;
     top: 0px;
     z-index: 10;
     background-color: #abd1c6;
     display: flex;
-    
-} 
+    height: 8vh;
+    border: 8px solid #001e1d;
+
+}
+
+.bike {
+    /* flex: 10%; */
+    background: url('../assest/Bike.png');
+    /* background-color: #f9bc60; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 60px;
+    height: 8vh;
+    /* border-right: 8px solid #001e1d; */
+}
 
 .nav-left {
     display: flex;
@@ -14,21 +27,22 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    padding-left: 50px;
+    background-color: #001e1d;
+    border-right: 8px solid #001e1d;
 }
 
 .nav-left a {
     text-decoration: none;
-    color:#001e1d;
-    font-weight: 600;
+    color: #fffffe;
+    font-weight: 700;
     font-size: .875rem;
     line-height: .9;
     text-transform: uppercase;
-    border: 2px solid #001e1d;
+    /* border: 2px solid #001e1d; */
     border-radius: 30px;
     display: inline-block;
     padding: 10px 20px 9px;
-    margin: 5px;
+    margin: 15px;
 }
 
 .nav-middle {
@@ -38,14 +52,16 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    /* background-color: #fffffe; */
 }
+
 .nav-middle a {
     text-decoration: none;
     font-size: 30px;
-    color:#001e1d;
+    color: #001e1d;
     font-weight: 800;
     text-transform: uppercase;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     line-height: .9;
 }
 
@@ -53,19 +69,20 @@
     display: flex;
     flex: 25%;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    padding-right: 50px;
+    background-color: #001e1d;
+    border-left: 8px solid #001e1d;
 }
 
 .nav-right a {
     text-decoration: none;
-    color:#001e1d;
-    font-weight: 600;
+    color: #fffffe;
+    font-weight: 700;
     font-size: .875rem;
     line-height: .9;
     text-transform: uppercase;
-    border: 2px solid #001e1d;
+    /* border: 2px solid #001e1d; */
     border-radius: 30px;
     display: inline-block;
     padding: 10px 20px 9px;
@@ -75,15 +92,68 @@
 .nav-left a:hover,
 .nav-right a:hover {
     background-color: #001e1d;
-    color: #fffffe;
-    transition: background-color .3s linear,color .3s linear;
+    color: #f9bc60;
+    transition: background-color .3s linear, color .3s linear;
 }
 
-@media only screen and (max-width: 1060px){
-    .nav-left {
-        padding-left: 15px;
+@media only screen and (max-width: 1060px) {
+    /* .nav1 {
+        padding: 10px 20px
+    } */
+}
+
+.hidden-menu button {
+    display: none;
+}
+
+
+@media only screen and (max-width: 860px) {
+    .hidden-menu button {
+        display: flex;
+        position: absolute;
+        left: 2vh;
+        top: 30%;
+        padding: 11px 11px;
+        background-color: hsla(38, 22%, 90%, 0);
+        background-image: url('../assest/bars-solid.png');
+        background-repeat: no-repeat, repeat;
+        background-position: center;
+        background-size: contain;
+        border: none;
+        border-radius: 5px;
+        margin-top: 0;
     }
-    .nav-right {
-        padding-right: 15px;
+
+    #hidden {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        background: linear-gradient(115deg, #abd1c6, #c3e4db);
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-left a {
+        color: #001e1d;
+        background-color: rgb(0, 0, 0, 0);
+        margin: 10px auto;
+    }
+
+    .nav-left {
+        justify-content: center;
+    }
+
+    .nav-right,
+    .nav-left {
+        display: none;
+        padding-left: 0;
+    }
+
+    .nav-middle {
+        padding: 10px 20px
     }
 }
