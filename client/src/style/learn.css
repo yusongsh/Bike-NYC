@@ -1,0 +1,171 @@
+.learn-hero {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    border-bottom: 2px solid #001e1d;
+}
+
+.learn-left {
+    width: 35%;
+    height: 100%;
+}
+
+.learn-left1 {
+    background-image: url('https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1122&q=80');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    height: 100%;
+}
+
+.learn-mid {
+    width: 20%;
+    height: 100%;
+    flex-direction: column;
+    border-right: 2px solid #001e1d;
+}
+
+.learn-left2 {
+    background-image: url('https://images.unsplash.com/photo-1610547803282-bb8e68c86954?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1175&q=80');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 50%;
+}
+
+.learn-left3 {
+    background-image: url('https://images.unsplash.com/photo-1523317937298-b83ffd7a5178?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    height: 50%;
+}
+
+.learn-right {
+    width: 50%;
+    padding: 20px 30px;
+}
+
+.learn-cta {
+    margin-top: 40px;
+    padding: 15px;
+    background-color: #001e1d;
+    border: none;
+    color: #fffffe;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.learn-cta:hover {
+    background-color: #f9bc60;
+    color: #001e1d;
+    transition: background-color .3s linear, color .3s linear;
+}
+
+.cards {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    border-bottom: 2px solid #001e1d;
+}
+
+.card1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 50px 0 30px;
+    flex: 70%;
+    height: 100%;
+}
+
+.category {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.category span {
+    background-color: #f9bc60;
+    padding: 6px 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.card-content h2 {
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 14px;
+    line-height: 1.25rem;
+}
+
+.card-content h6 {
+    margin: 5px 0 10px;
+}
+
+.card-cta {
+    padding: 15px;
+    margin-top: 20px;
+    width: 120px;
+    background-color: #001e1d;
+    border: none;
+    color: #fffffe;
+    font-size: .875rem;
+    font-weight: 600;
+}
+
+.card-cta:hover {
+    background-color: #f9bc60;
+    color: #001e1d;
+    transition: background-color .3s linear, color .3s linear;
+}
+
+.card1-p {
+    flex: 30%;
+    background-image: url('https://cdn.shopify.com/s/files/1/1279/5219/articles/custom_resized_7347d02f-fa79-4ddc-912f-4d2610f9632d_900x.jpg?v=1615404819');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 25%;
+}
+
+.card2-p {
+    flex: 30%;
+    background-image: url('https://www.nycgo.com/images/uploads/articles/Biking/Bike-Rent-Central-Park-Manhattan-NYC_006_photo_3000x2000_Mark-Derho.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 25%;
+}
+
+.card3-p {
+    flex: 30%;
+    background-image: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pedestrian-and-bicycle-riders-sharing-the-street-royalty-free-image-636276000-1539195078.jpg?crop=1xw:1xh;center,top&resize=980:*');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 25%;
+}
+
+.card4-p {
+    flex: 30%;
+    background-image: url('https://images.unsplash.com/photo-1602148740250-0a4750e232e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 25%;
+}
