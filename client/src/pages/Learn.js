@@ -1,6 +1,9 @@
 import React from "react";
 import Nav1 from "../components/Nav1";
 import "../style/learn.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 function Learn() {
   return (
@@ -14,6 +17,7 @@ function Learn() {
           <div className="learn-left2"></div>
           <div className="learn-left3"></div>
         </div>
+
         <div className="learn-right">
           <h1>BIKE SKILLS 101: LEARN TO RIDE—ADULTS</h1>
           <div className="category">
@@ -35,7 +39,32 @@ function Learn() {
           </p>
           <button className="learn-cta">View Class</button>
         </div>
+        <div className="social-icon">
+              <a
+                href="https://www.linkedin.com/in/yusongshi/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon icon={faLinkedinIn} size="lg" />
+              </a>
+              <a
+                href="https://github.com/yusongsh"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon icon={faGithub} size="lg" />
+              </a>
+              <a
+                href="mailto:jackshi.sys@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon icon={faEnvelope} size="lg" />
+              </a>
+          </div>
       </div>
+
+     
 
       <div className="cards">
         <div className="card1">
