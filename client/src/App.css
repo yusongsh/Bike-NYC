@@ -17,3 +17,7 @@ a {
     text-decoration: none;
     color: #001e1d;
 }
+
+.active {
+    color: #f9bc60 !important;
+}

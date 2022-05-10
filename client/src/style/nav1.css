@@ -9,6 +9,10 @@
 
 }
 
+.is-active {
+    color: #f9bc60;
+}
+
 .bike {
     background: url('../assest/Bike.png');
     /* background-color: #f9bc60; */
