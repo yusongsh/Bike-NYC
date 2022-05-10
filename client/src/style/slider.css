@@ -1,58 +1,60 @@
 .slide-container {
-    width: 100%;
-    margin: auto;
-  }
-  
-  .each-slide > div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    height: 300px;
-  }
-  
-  .each-slide span {
-    padding: 20px;
-    font-size: 20px;
-    backgroun: #efefef;
-    text-align: center;
-  }
-  
-  .each-fade {
-    display: flex;
-  }
-  
-  .each-fade .image-container {
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  .each-fade .image-container img {
-    width: 100%;
-  }
-  
-  .each-fade h2 {
-    width: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    background: #adceed;
-  }
-  
-  
-  .image2{
-    width: 50vw;
-    height: 60vh;
-    object-fit: cover;
-  }
+  width: 100%;
+  margin: auto;
+  /* position: fixed; */
+}
 
-  button{
-    padding: 15px 25px;
-    border: 6px solid #001e1d;
-    background-color: #fffffe;
-    font-size: 20px;
-    font-weight:500;
-    position: absolute;
-    bottom: 8vh;
-  }
+.each-slide>div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 300px;
+}
+
+.each-slide span {
+  padding: 20px;
+  font-size: 20px;
+  background-color: #efefef;
+  text-align: center;
+}
+
+.each-fade {
+  display: flex;
+}
+
+.each-fade .image-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.each-fade .image-container img {
+  width: 100%;
+}
+
+.each-fade h2 {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background: #adceed;
+}
+
+
+.image2 {
+  width: 50vw;
+  height: 68vh;
+  object-fit: cover;
+}
+
+.slide-container button {
+  padding: 12px 24px;
+  border-top: 2px solid #001e1d;
+  border-right: 2px solid #001e1d;
+  background-color: #fffffe;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  bottom: 6.2vh;
+}

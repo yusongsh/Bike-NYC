@@ -3,24 +3,30 @@
   bottom: 0;
   left: 0;
   width: 100vw;
-  max-width: 100%;
   height: 8vh;
   margin: 0 auto;
   overflow-x: hidden;
-  background-color: #f9bc60;
+  background-color: #001e1d;
+  border-top: 2px solid #001e1d;
 }
 
 .footer-content {
   position: absolute;
   white-space: nowrap;
-  /* border-top: 1vh solid #001e1d; */
+  /* padding: 20px; */
+  /* border-top: 8px solid #001e1d; */
   animation: marquee 80s linear infinite;
 }
 
 .footer-content p {
-  font-size: 18px;
+  /* padding: 0;
+  margin: 0px; */
+  margin-top: 1.5rem;
+  color: #f9bc60;
+  font-size: .875rem;
+  line-height: .9;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 

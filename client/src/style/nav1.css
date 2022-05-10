@@ -2,22 +2,21 @@
     position: sticky;
     top: 0px;
     z-index: 10;
-    background-color: #abd1c6;
+    /* background-color: #abd1c6; */
     display: flex;
-    height: 8vh;
-    border: 8px solid #001e1d;
+    height: 6vh;
+    border: 2px solid #001e1d;
 
 }
 
 .bike {
-    /* flex: 10%; */
     background: url('../assest/Bike.png');
     /* background-color: #f9bc60; */
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     width: 60px;
-    height: 8vh;
+    height: 30px;
     /* border-right: 8px solid #001e1d; */
 }
 
@@ -28,7 +27,7 @@
     justify-content: flex-start;
     align-items: center;
     background-color: #001e1d;
-    border-right: 8px solid #001e1d;
+    border-right: 2px solid #001e1d;
 }
 
 .nav-left a {
@@ -39,7 +38,7 @@
     line-height: .9;
     text-transform: uppercase;
     /* border: 2px solid #001e1d; */
-    border-radius: 30px;
+    border-radius: 20px;
     display: inline-block;
     padding: 10px 20px 9px;
     margin: 15px;
@@ -52,7 +51,7 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    /* background-color: #fffffe; */
+    background-color: #fffffe;
 }
 
 .nav-middle a {
@@ -72,7 +71,7 @@
     justify-content: center;
     align-items: center;
     background-color: #001e1d;
-    border-left: 8px solid #001e1d;
+    border-left: 2px solid #001e1d;
 }
 
 .nav-right a {
@@ -91,7 +90,7 @@
 
 .nav-left a:hover,
 .nav-right a:hover {
-    background-color: #001e1d;
+    /* background-color: #001e1d; */
     color: #f9bc60;
     transition: background-color .3s linear, color .3s linear;
 }

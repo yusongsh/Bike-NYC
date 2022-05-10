@@ -10,12 +10,12 @@ function Nav1() {
     <div className="nav1">
       <div className="nav-left" id={showLinks ? "hidden" : ""}>
         <Link to="">Explore</Link>
-        <Link to="">Learn</Link>
+        <Link to="/learn">Learn</Link>
         <Link to="">Shop</Link>
       </div>
       <div className="nav-middle">
         <div className="bike"></div>
-        <Link to="">BIKE NYC</Link>
+        <Link to="/">BIKE NYC</Link>
       </div>
       <div className="nav-right">
         <Link to="">Contact</Link>
