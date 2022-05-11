@@ -14,17 +14,19 @@ function Shop() {
             <div className="shop-wide-text">
               <h3>Editor's choice: Bikes To Buy 👉🏻 </h3>
               <h6>Bike Above: Specialized Allez custom build</h6>
-              <p>
-                The best bikes made our live easier, kept us exercised, taught
-                us something new, and helped make things more entertaining. Here
-                are some bikes that our editor really likes. Thank you for
-                reading and thanks for making these extraordinary bikes.
-              </p>
             </div>
           </div>
         </div>
 
         <div className="shop-thin">
+          <div className="shop-thin-title">
+            <p>
+              "The best bikes made our live easier, kept us exercised, taught us
+              something new, and helped make things more entertaining. Here are
+              some bikes that our editor really likes. Thank you for reading and
+              thanks for making these extraordinary bikes."
+            </p>
+          </div>
           <div className="shop-thin-main">
             <a
               href="https://www.specialized.com/us/en/s-works-aethos---dura-ace-di2/p/199439?gclid=Cj0KCQjwmuiTBhDoARIsAPiv6L9olK-cDGSxHzDRdWj3aI6eUz94c3RL4GzVwuQGhW_LyGTyiEaPl6EaAjDJEALw_wcB&color=321703-199439"
@@ -188,17 +190,19 @@ function Shop() {
             <div className="rental-wide-text">
               <h3>Editor's choice: Bikes For Rent 👉🏻 </h3>
               <h6>Bike Above: Citibike</h6>
-              <p>
-                Bike rentals are a great introduction to bike culture. A living,
-                breathing human connects you with the perfect bike for your
-                plans. They give you tips on how to use it and suggest great
-                routes around NYC.
-              </p>
             </div>
           </div>
         </div>
 
         <div className="shop-thin">
+          <div className="shop-thin-title">
+            <p>
+              "Bike rentals are a great introduction to bike culture. A living,
+              breathing human connects you with the perfect bike for your plans.
+              They give you tips on how to use it and suggest great routes
+              around NYC."
+            </p>
+          </div>
           <div className="shop-thin-main">
             <a href="https://citibikenyc.com/" target="_blank" rel="noreferrer">
               <div className="rental-thin-media"></div>

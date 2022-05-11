@@ -30,10 +30,22 @@
     flex-direction: column;
 }
 
+.shop-thin-title,
 .shop-wide-main,
 .rental-wide-main {
     width: 80%;
     height: 100%;
+}
+
+.shop-thin-title p {
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-weight: 700;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-bottom: 2px solid #001e1d;
+    border-top: 2px solid #001e1d;
 }
 
 .shop-wide-media {
@@ -153,7 +165,6 @@
     margin: 0 auto;
     width: 100%;
     margin-top: 300px;
-    margin-bottom: 300px;
 }
 
 .rental-wide-text {
