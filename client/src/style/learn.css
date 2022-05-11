@@ -138,6 +138,7 @@
     background-size: cover;
     height: 100%;
     width: 25%;
+    border-left: 2px solid #001e1d;
 }
 
 .card2-p {
@@ -148,6 +149,7 @@
     background-size: cover;
     height: 100%;
     width: 25%;
+    border-left: 2px solid #001e1d;
 }
 
 .card3-p {
@@ -158,6 +160,7 @@
     background-size: cover;
     height: 100%;
     width: 25%;
+    border-left: 2px solid #001e1d;
 }
 
 .card4-p {
@@ -168,6 +171,7 @@
     background-size: cover;
     height: 100%;
     width: 25%;
+    border-left: 2px solid #001e1d;
 }
 
 .social-icon {

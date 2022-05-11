@@ -180,6 +180,107 @@ function Shop() {
           </div>
         </div>
       </div>
+
+      <div className="rental-Container">
+        <div className="rental-wide">
+          <div className="rental-wide-main">
+            <div className="rental-wide-media"></div>
+            <div className="rental-wide-text">
+              <h3>Editor's choice: Bikes For Rent 👉🏻 </h3>
+              <h6>Bike Above: Citibike</h6>
+              <p>
+                Bike rentals are a great introduction to bike culture. A living,
+                breathing human connects you with the perfect bike for your
+                plans. They give you tips on how to use it and suggest great
+                routes around NYC.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="shop-thin">
+          <div className="shop-thin-main">
+            <a href="https://citibikenyc.com/" target="_blank" rel="noreferrer">
+              <div className="rental-thin-media"></div>
+              <div className="shop-thin-text">
+                <h3>CitiBike</h3>
+                <h5>$15.42/mo</h5>
+                <p>
+                  Citi Bike is often the fastest way to get around. Pick up a
+                  bike close by, breeze past traffic, and easily drop it off
+                  when you’re done.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div className="shop-thin-main">
+            <a
+              href="https://www.unlimitedbiking.com/new-york/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="rental-thin-media1"></div>
+              <div className="shop-thin-text">
+                <h3>Unlimited Biking</h3>
+                <h5>$40/Day</h5>
+                <p>
+                  Unlimited Biking presents variety of high-quality Cannondale
+                  bikes: comfort, hybrid, tandem (for two people), a variety of
+                  kids’ bikes, baby seats and children’s trailers. Our team
+                  members are pleased to offer recommendations of specific
+                  routes, must-see attractions, and special eatery options. We
+                  have everything you need for an all day adventure : a map, a
+                  helmet, a bike lock and a basket for your convenience, all
+                  free with your rental!
+                </p>
+              </div>
+            </a>
+          </div>
+          <div className="shop-thin-main">
+            <a
+              href="https://www.viator.com/tours/New-York-City/1-Hour-Central-Park-Bike-Rental/d687-9892P4?mcid=56757"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="rental-thin-media2"></div>
+              <div className="shop-thin-text">
+                <h3>Central Park Bike Rental</h3>
+                <h5>From $17</h5>
+                <p>
+                  Rent a bike in Central Park, the perfect way to explore this
+                  New York City landmark. Located in the heart of Manhattan,
+                  Central Park offers miles of tree-shaded bike paths leading to
+                  open meadows, lakes and attractions such as the Central Park
+                  Zoo. You can select the style of bike that you prefer, with
+                  baby seats, baby trailers and tandem bikes also available. All
+                  rentals come with a helmet, chain lock, and map. Choose from a
+                  two-hour, four-hour or full-day rental. Read more about...
+                </p>
+              </div>
+            </a>
+          </div>
+          <div className="shop-thin-main">
+            <a
+              href="https://gorevel.com/mopeds/moped"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="rental-thin-media3"></div>
+              <div className="shop-thin-text">
+                <h3>Revel</h3>
+                <h5>Day pass: $38.99</h5>
+                <p>
+                  Revel is a dockless electric moped sharing startup based in
+                  New York City. Founded in 2018 by Frank Reig and Paul Suhey,
+                  it first started with a small pilot program in New York, later
+                  growing its fleet size in New York and expanding into
+                  Washington, D.C.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
     </>
   );
 }

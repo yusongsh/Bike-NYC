@@ -6,9 +6,11 @@
     margin: 0 auto;
     width: 100%;
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
-.shop-wide {
+.shop-wide,
+.rental-wide {
     width: 65%;
     height: 500px;
     position: sticky;
@@ -28,7 +30,8 @@
     flex-direction: column;
 }
 
-.shop-wide-main {
+.shop-wide-main,
+.rental-wide-main {
     width: 80%;
     height: 100%;
 }
@@ -41,12 +44,36 @@
     height: 100%;
 }
 
+
+.shop-wide-text h3,
+.rental-wide-text h3 {
+    font-size: 2rem;
+}
+
+.rental-wide-text h6,
+.shop-wide-text h6,
+.shop-thin-text h5,
+.rental-wide-text h5 {
+    font-size: 0.75rem;
+    background-color: #f9bc60;
+    display: inline-block;
+    margin: 0;
+}
+
+.shop-wide-text p,
+.shop-thin-text p,
+.rental-wide-text p {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
 .shop-thin-main {
     width: 80%;
     height: 100%;
     display: block;
     margin-bottom: 60px;
 }
+
 
 .shop-thin-media {
     background-image: url('https://assets.specialized.com/i/specialized/ROAD-4267_AETHOS_LC_1?$hybris-pdp-photo-carousel$');
@@ -101,6 +128,75 @@
     background-image: url('https://cdn.shopify.com/s/files/1/0232/3305/products/State_Bicycle_Co_4130-MatteBlack_Mirror_FixedGear_Single-Speed_-10.jpg?v=1649192707');
     background-repeat: no-repeat;
     background-position: left;
+    background-size: cover;
+    height: 260px;
+}
+
+
+
+
+
+/* .rental-thin {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    flex-direction: column;
+} */
+
+.rental-Container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 300px;
+    margin-bottom: 300px;
+}
+
+.rental-wide-text {
+    padding-bottom: 300px;
+}
+
+.rental-wide-media {
+    background-image: url('https://images.unsplash.com/photo-1420641519650-9d7d0ea0a829?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1474&q=80');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
+
+.rental-thin-media {
+    background-image: url('https://images.ctfassets.net/p6ae3zqfb1e3/3fyi4QZE972WfZuuRDX5JU/521ef35c5b795af824ce05e1491cf66d/day-passes.png?w=1500&q=60&fm=');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 260px;
+}
+
+.rental-thin-media1 {
+    background-image: url('https://res.cloudinary.com/unlimited-biking/images/w_1170,h_400,c_fill,g_auto/f_webp,q_auto:good/v1609146006/Highlights-of-Brooklyn-Bridge-Bike-Tour-6-min/Highlights-of-Brooklyn-Bridge-Bike-Tour-6-min-1170x400.jpg?_i=AA');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 260px;
+}
+
+.rental-thin-media2 {
+    background-image: url('https://media.tacdn.com/media/attractions-splice-spp-674x446/08/3a/96/35.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 260px;
+}
+
+.rental-thin-media3 {
+    background-image: url('https://astoriapost.com/wp-content/uploads/sites/27/2019/05/homepage-section-header-howtorevel-767x660.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     height: 260px;
 }
