@@ -1,5 +1,6 @@
 import React from "react";
 import Nav1 from "../components/Nav1";
+import Footer1 from "../components/Footer1";
 import "../style/shop.css";
 
 function Shop() {
@@ -285,6 +286,8 @@ function Shop() {
           </div>
         </div>
       </div>
+
+      <Footer1 />
     </>
   );
 }

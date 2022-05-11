@@ -49,7 +49,7 @@ function Footer1() {
           <h3> Get the latest from us</h3>
           <form>
             <input type="text" placeholder="Enter your email"></input>
-            <button>Sign up</button>
+            <button className="signup-cta">Sign up</button>
           </form>
         </div>
         <div className="footer-right-col2">
