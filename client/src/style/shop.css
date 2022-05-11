@@ -5,20 +5,102 @@
     justify-content: center;
     margin: 0 auto;
     width: 100%;
+    margin-top: 100px;
 }
 
 .shop-wide {
     width: 65%;
-    height: 1000px;
-    background-color: aqua;
+    height: 500px;
     position: sticky;
-    top: 60px;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .shop-thin {
     width: 35%;
-    height: 5000px;
-    background-color: blueviolet;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    flex-direction: column;
 }
 
-.shop-wide-media {}
+.shop-wide-main {
+    width: 80%;
+    height: 100%;
+}
+
+.shop-wide-media {
+    background-image: url('https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1122&q=80');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
+.shop-thin-main {
+    width: 80%;
+    height: 100%;
+    display: block;
+    margin-bottom: 60px;
+}
+
+.shop-thin-media {
+    background-image: url('https://assets.specialized.com/i/specialized/ROAD-4267_AETHOS_LC_1?$hybris-pdp-photo-carousel$');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    height: 260px;
+    /* object-fit: contain; */
+}
+
+.shop-thin-media2 {
+    background-image: url('https://images.giant-bicycles.com/b_white,c_pad,h_850,q_80/r53nze36dx9k9yxmdlzm/MY22TCRAdvancedSL1Disc_ColorAStarryNight.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    height: 260px;
+}
+
+.shop-thin-media3 {
+    background-image: url('https://trek.scene7.com/is/image/TrekBicycleProducts/DomanePlusLT9_22_35761_A_Portrait?$responsive-pjpg$&cache=on,on&wid=1920&hei=1440');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    height: 260px;
+}
+
+.shop-thin-media4 {
+    background-image: url('https://embed.widencdn.net/img/dorelrl/d2dahjxeqy/2000px@1x/C22_C25572U_Moterra_Neo_Crb_LT_2_BBQ_PD.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    height: 260px;
+}
+
+.shop-thin-media5 {
+    background-image: url('https://images.ctfassets.net/tu8gkjqcgjw9/W1XziIctDK5l1LbJviLXU/abc65c2309f90f113045f56c13675675/Super73_RX_Accessories_1920x1080.jpg?w=1920&h=1080&q=85&fm=webp');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    height: 260px;
+}
+
+.shop-thin-media6 {
+    background-image: url('https://www.colnago.com/media/atelier-middle-banner.jpg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    height: 260px;
+}
+
+.shop-thin-media7 {
+    background-image: url('https://cdn.shopify.com/s/files/1/0232/3305/products/State_Bicycle_Co_4130-MatteBlack_Mirror_FixedGear_Single-Speed_-10.jpg?v=1649192707');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    height: 260px;
+}
