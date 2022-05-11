@@ -307,3 +307,25 @@
         transform: translateX(-50%);
     }
 }
+
+.spiralContainer {
+    position: fixed;
+    background-color: #fffffe;
+    bottom: 36%;
+    right: 20%;
+}
+
+#loading {
+    width: 100px;
+    animation: rotation 15s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(359deg);
+    }
+}

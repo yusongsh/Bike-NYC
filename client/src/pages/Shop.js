@@ -2,6 +2,9 @@ import React from "react";
 import Nav1 from "../components/Nav1";
 import Footer1 from "../components/Footer1";
 import "../style/shop.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 function Shop() {
   return (
@@ -285,6 +288,21 @@ function Shop() {
             </a>
           </div>
         </div>
+      </div>
+      <div className="social-icon">
+        <a
+          href="https://www.linkedin.com/in/yusongshi/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FontAwesomeIcon icon={faLinkedinIn} size="lg" />
+        </a>
+        <a href="https://github.com/yusongsh" target="_blank" rel="noreferrer">
+          <FontAwesomeIcon icon={faGithub} size="lg" />
+        </a>
+        <a href="mailto:jackshi.sys@gmail.com" target="_blank" rel="noreferrer">
+          <FontAwesomeIcon icon={faEnvelope} size="lg" />
+        </a>
       </div>
 
       <Footer1 />

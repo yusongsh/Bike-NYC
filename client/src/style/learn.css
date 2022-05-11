@@ -177,7 +177,7 @@
 .social-icon {
     background-color: #f9bc60;
     height: 120px;
-    width: 80px;
+    width: 60px;
     position: fixed;
     top: 50px;
     right: 0;
@@ -192,4 +192,10 @@
     margin: 0 auto;
     border-bottom: 2px solid #001e1d;
     border-left: 2px solid #001e1d;
+    border-top: 2px solid #001e1d;
+}
+
+.social-icon a:hover {
+    color: #fffffe;
+    transition: background-color .3s linear, color .3s linear;
 }

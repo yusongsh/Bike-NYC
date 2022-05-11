@@ -36,9 +36,9 @@ function Footer1() {
               </a>
             </div>
             <div className="footer-link2">
-              <Link to="">Contact</Link>
-              <Link to="">Privacy</Link>
-              <Link to="">Credit</Link>
+              <Link to="/contact">Contact</Link>
+              <Link to="/privacy">Privacy</Link>
+              <Link to="/credit">Credit</Link>
             </div>
           </div>
         </div>

@@ -182,7 +182,7 @@ function Learn() {
           <div className="card4-p"></div>
         </div>
       </div>
-      {/* <Footer /> */}
+
       <Footer1 />
     </>
   );

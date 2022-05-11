@@ -13,6 +13,7 @@ import img2 from "../assest/img-3.png";
 import img3 from "../assest/img-4.jpg";
 import { Link } from "react-router-dom";
 import Weather from "../components/Weather";
+import spin from "../assest/spin-1.png";
 
 function Landing() {
   return (
@@ -115,7 +116,8 @@ function Landing() {
                 </div>
               </div>
               <div class="spiralContainer">
-                <div class="spiral"></div>
+                <img id="loading" src={spin} alt="" />
+                {/* <div class="spiral"></div> */}
               </div>
               <div className="right-bottom2">
                 <div className="bottom2-top">
