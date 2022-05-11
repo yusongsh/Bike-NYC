@@ -1,7 +1,13 @@
 import React from "react";
+import Nav1 from "../components/Nav1";
 
 function Explore() {
-  return <div>Explore</div>;
+  return (
+    <>
+      <Nav1 />
+      <h1>Explore</h1>
+    </>
+  );
 }
 
 export default Explore;

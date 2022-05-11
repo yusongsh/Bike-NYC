@@ -9,9 +9,7 @@
 
 }
 
-.is-active {
-    color: #f9bc60;
-}
+
 
 .bike {
     background: url('../assest/Bike.png');
@@ -61,12 +59,13 @@
 .nav-middle a {
     text-decoration: none;
     font-size: 30px;
-    color: #001e1d;
+    color: #001e1d !important;
     font-weight: 800;
     text-transform: uppercase;
     font-size: 1.5rem;
     line-height: .9;
 }
+
 
 .nav-right {
     display: flex;

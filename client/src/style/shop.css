@@ -1,0 +1,24 @@
+.Shop-Container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.shop-wide {
+    width: 65%;
+    height: 1000px;
+    background-color: aqua;
+    position: sticky;
+    top: 60px;
+}
+
+.shop-thin {
+    width: 35%;
+    height: 5000px;
+    background-color: blueviolet;
+}
+
+.shop-wide-media {}
