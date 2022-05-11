@@ -21,7 +21,7 @@ function Weather() {
   //   console.log(weather);
   if (weather && weather.current) {
     return (
-      <div className="weather">
+      <div className="weather" style={{ textAlign: "center" }}>
         <img
           src={weather.current.condition.icon}
           alt=""

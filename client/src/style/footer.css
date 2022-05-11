@@ -1,5 +1,5 @@
 .footer {
-  position: relative;
+  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -7,7 +7,7 @@
   margin: 0 auto;
   overflow-x: hidden;
   background-color: #001e1d;
-  border-top: 2px solid #001e1d;
+  /* border-top: 2px solid #001e1d; */
   display: flex;
   justify-content: center;
   align-items: center;

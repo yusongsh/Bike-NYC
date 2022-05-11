@@ -1,4 +1,265 @@
 .landing {
     width: 100%;
+    max-height: 100vh;
     overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.landing-left,
+.landing-right {
+    width: 50%;
+    height: 100%;
+    min-width: 300px;
+    border-right: 2px solid #001e1d;
+}
+
+.landing-right {
+    width: 50%;
+}
+
+.landing-left-top {
+    height: 20vh;
+    min-height: 160px;
+    display: flex;
+    border-bottom: 2px solid #001e1d;
+}
+
+
+
+.left-top1 {
+    width: 50%;
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.left-top1 h1 {
+    font-size: 4rem;
+}
+
+.left-top2 {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    align-items: center;
+    border-left: 2px solid #001e1d;
+}
+
+.left-top2-up {
+    position: absolute;
+    height: 20%;
+}
+
+.left-top2-down {
+    /* height: 80%; */
+    position: relative;
+    top: 30%;
+}
+
+
+.landing-left-bottom {
+    height: 70vh;
+    min-height: 400px;
+}
+
+.weather-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+.landing-right-top {
+    height: 48vh;
+    min-height: 300px;
+    display: flex;
+    border-bottom: 2px solid #001e1d;
+}
+
+
+.right-top1 {
+    width: 90%;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.right-top1-up h5 {
+    position: relative;
+    top: 6px;
+}
+
+.left-top2 h5,
+.right-top1 h5,
+.right-bottom1 h5,
+.bottom2-top h5 {
+    font-size: .825rem;
+    text-decoration: none;
+}
+
+.left-top2 h5:hover,
+.right-top1 h5:hover,
+.right-bottom1 h5:hover,
+.bottom2-top h5:hover {
+    color: #f9bc60;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: background-color .3s linear, color .3s linear;
+}
+
+.right-top2 {
+    width: 10%;
+    min-width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    border-left: 2px solid #001e1d;
+    background-color: #f9bc60;
+}
+
+.right-top1-up {
+    position: absolute;
+    height: 50%;
+}
+
+.right-top2 a:hover {
+    color: #fffffe;
+    transition: background-color .2s linear, color .2s linear;
+}
+
+.right-top1-down {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-width: 50px;
+    min-height: 150px;
+}
+
+.path-info {
+    width: 12vw;
+    height: 100%;
+    text-align: center;
+    background-color: #f2f7f6;
+    margin: 1.5vh;
+    filter: grayscale(100%);
+}
+
+
+.path-info h4 {
+    padding-top: 1vh;
+    font-size: 16px;
+    margin: 0;
+    font-weight: 500;
+
+    padding: 20px 20px;
+
+}
+
+.path-info img {
+    height: 20vh;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.path-info:hover {
+    filter: none;
+    background-color: #001e1d;
+    color: #fffffe;
+    transition: background-color .2s linear, color .2s linear;
+
+}
+
+
+.landing-right-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+
+    height: 38vh;
+    border-right: 2px solid #001e1d;
+}
+
+.right-bottom1,
+.right-bottom2,
+.bottom2-top {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-bottom1 h2,
+.right-bottom2 h2 {
+    font-size: 42px;
+}
+
+.right-bottom1 a,
+.bottom2-top a,
+.right-top1 a {
+    text-decoration: none;
+    color: #001e1d;
+}
+
+.right-bottom1 h2 {
+    display: flex;
+    margin: 60px auto;
+}
+
+.right-bottom1 {
+    border-right: 2px solid #001e1d;
+    padding: 0 20px;
+}
+
+.right-bottom2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom2-top {
+    height: 30vh;
+}
+
+.bottom2-top h2 {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+.bottom2-bottom {
+    border-top: 2px solid #001e1d;
+}
+
+.bottom2-bottom h2 {
+    margin: 1.5vh;
+}
+
+
+.animated {
+    background: url('https://images.unsplash.com/photo-1543158266-0066955047b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80') no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: moveBg 50s linear infinite;
+    -webkit-animation: moveBg 50s linear infinite;
+}
+
+@keyframes moveBg {
+    0% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 30%;
+    }
 }

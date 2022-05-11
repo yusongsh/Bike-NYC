@@ -24,7 +24,7 @@ function Landing() {
               <h1 className="animated">Bike NYC</h1>
             </div>
             <div className="left-top2">
-              <div>
+              <div className="left-top2-up">
                 <a
                   href="https://www.weatherapi.com/weather/q/new-york-new-york-united-states-of-america-2618724"
                   rel="noreferrer"
@@ -33,7 +33,7 @@ function Landing() {
                   <h5>Weather</h5>
                 </a>
               </div>
-              <div>
+              <div className="left-top2-down">
                 <Weather />
               </div>
             </div>
@@ -46,33 +46,34 @@ function Landing() {
         <div className="landing-right">
           <div className="landing-right-top">
             <div className="right-top1">
-              <Link to="">
-                <h5>Featured Paths</h5>
-              </Link>
-              <div className="right-top1-card">
+              <div className="right-top1-up">
+                <Link to="">
+                  <h5>Featured Paths</h5>
+                </Link>
+              </div>
+
+              <div className="right-top1-down">
                 <Link to="">
                   <div className="path-info">
                     <img src={img1} alt="central park" />
                     <h4>Central Park Loop</h4>
-                    {/* <p>Length: 6.1mi</p> */}
                   </div>
                 </Link>
                 <Link to="">
                   <div className="path-info">
                     <img src={img2} alt="hudson river greenway" />
                     <h4>Hudson River Greenway</h4>
-                    {/* <p>Length: 9.3mi</p> */}
                   </div>
                 </Link>
                 <Link to="">
                   <div className="path-info">
                     <img src={img3} alt="central park" />
                     <h4>Brooklyn Bridge</h4>
-                    {/* <p>Length: 6.1mi</p> */}
                   </div>
                 </Link>
               </div>
             </div>
+
             <div className="right-top2">
               <a
                 href="https://www.linkedin.com/in/yusongshi/"

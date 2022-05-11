@@ -1,4 +1,4 @@
-.landing {
+/* .landing {
     height: 86vh;
     display: flex;
     width: 100vw;
@@ -8,7 +8,6 @@
     display: flex;
     width: 50%;
     flex-direction: column;
-    /* background-color: #abd1c6; */
     border-right: 2px solid #001e1d;
     border-left: 2px solid #001e1d;
 }
@@ -59,7 +58,6 @@
 .bottom2-top h5 {
     font-size: .825rem;
     text-decoration: none;
-    /* text-underline-offset: 3px; */
 }
 
 .weatherhere {
@@ -135,8 +133,6 @@
     background-color: #f2f7f6;
     margin: 1.5vh;
     filter: grayscale(100%);
-    /* box-shadow: 2px 2px 10px 2px rgb(0, 30, 29, .2); */
-    /* border: 1px solid #001e1d; */
 }
 
 
@@ -145,9 +141,9 @@
     font-size: 16px;
     margin: 0;
     font-weight: 500;
-    /* color: #fffffe; */
+
     padding: 20px 20px;
-    /* border: 1px solid #001e1d; */
+
 }
 
 .path-info img {
@@ -162,7 +158,7 @@
     background-color: #001e1d;
     color: #fffffe;
     transition: background-color .2s linear, color .2s linear;
-    /* border: 1px solid #001e1d; */
+
 }
 
 
@@ -171,7 +167,7 @@
     flex-direction: row;
     justify-content: center;
     text-align: center;
-    /* width: 100%; */
+
     height: 40vh;
     border-right: 2px solid #001e1d;
 }
@@ -247,4 +243,4 @@
     100% {
         background-position: 0% 30%;
     }
-}
+} */
