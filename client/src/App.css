@@ -18,3 +18,17 @@ a {
 .active {
     color: #f9bc60 !important;
 }
+
+.scroll-icon {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    position: sticky;
+    bottom: 100px;
+    cursor: pointer;
+    z-index: 100;
+    font-size: 2rem;
+    color: #f9bc60;
+}

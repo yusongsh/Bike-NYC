@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 import Footer1 from "../components/Footer1";
-import Footer from "../components/Footer";
+import ScrollToTop from "../components/ScrollToTop";
 
 function Learn() {
   return (
@@ -182,7 +182,7 @@ function Learn() {
           <div className="card4-p"></div>
         </div>
       </div>
-
+      <ScrollToTop />
       <Footer1 />
     </>
   );

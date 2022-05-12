@@ -5,6 +5,7 @@ import "../style/shop.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
+import ScrollToTop from "../components/ScrollToTop";
 
 function Shop() {
   return (
@@ -304,7 +305,7 @@ function Shop() {
           <FontAwesomeIcon icon={faEnvelope} size="lg" />
         </a>
       </div>
-
+      <ScrollToTop />
       <Footer1 />
     </>
   );
