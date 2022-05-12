@@ -50,7 +50,7 @@ function Landing() {
             <div className="landing-right-top">
               <div className="right-top1">
                 <div className="right-top1-up" style={{ top: "0px" }}>
-                  <Link to="">
+                  <Link to="/featured">
                     <h5 style={{ marginTop: "0px", top: "8px" }}>
                       Featured Paths
                     </h5>
@@ -107,7 +107,7 @@ function Landing() {
             <div className="landing-right-bottom">
               <div className="right-bottom1">
                 <div>
-                  <Link to="">
+                  <Link to="/learn">
                     <h5>Learn</h5>
                   </Link>
                 </div>
@@ -122,7 +122,7 @@ function Landing() {
               <div className="right-bottom2">
                 <div className="bottom2-top">
                   <div>
-                    <Link to="">
+                    <Link to="/shop">
                       <h5>Shop</h5>
                     </Link>
                   </div>
