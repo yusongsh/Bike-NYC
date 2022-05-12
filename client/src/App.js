@@ -34,7 +34,7 @@ function App() {
     loadPaths();
   }, []);
 
-  console.log(paths);
+  // console.log(paths);
 
   return (
     <div className="App">

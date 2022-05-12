@@ -12,7 +12,7 @@ function Paths({
   photo,
   path_url,
 }) {
-  console.log(reviews);
+  // console.log(reviews);
 
   return (
     <>
@@ -29,12 +29,14 @@ function Paths({
           <p>{route_type}</p>
           <div>
             Reviews:
-            {reviews.map((review, index) => (
-              <div key={index}>
-                <h1>{review.name}</h1>
-                <h1>{review.description}</h1>
-              </div>
-            ))}
+            {reviews.map((review, index) => {
+              return (
+                <div key={index}>
+                  <h1>{review.name}</h1>
+                  <h1>{review.description}</h1>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

@@ -7,7 +7,7 @@ import Parks from "../components/Parks";
 import Paths from "../components/Paths";
 
 function Explore({ parks, paths }) {
-  console.log(parks);
+  // console.log(parks);
 
   const [searchpark, setSearchPark] = useState("");
   const [searchpath, setsearchPath] = useState("");
