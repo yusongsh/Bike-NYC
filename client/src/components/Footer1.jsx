@@ -27,6 +27,7 @@ function Footer1() {
               <Link to="/shop">Shop</Link>
               <Link to="/explore">Explore</Link>
               <Link to="/learn">Learn</Link>
+              <Link to="/featured">Featured</Link>
               <a
                 href="https://www.weatherapi.com/weather/q/new-york-new-york-united-states-of-america-2618724"
                 rel="noreferrer"
