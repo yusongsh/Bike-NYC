@@ -114,7 +114,7 @@
         display: flex;
         position: absolute;
         left: 2vh;
-        top: 30%;
+        top: 2vh;
         padding: 11px 11px;
         background-color: hsla(38, 22%, 90%, 0);
         background-image: url('../assest/bars-solid.png');

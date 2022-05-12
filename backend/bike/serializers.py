@@ -16,23 +16,6 @@ class BikesSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-class PathSerializer(serializers.ModelSerializer):
-    reviews = serializers.HyperlinkedRelatedField(
-        view_name='review_detail',
-        many=True,
-        read_only=True
-    )
-    path_url = serializers.ModelSerializer.serializer_url_field(
-        view_name='path_detail'
-    )
-
-    class Meta:
-        model = Path
-        fields = ('id', 'name', 'length', 'start_point',
-                  'end_point', 'elevation', 'route_type',
-                  'photo_url', 'reviews', 'path_url')
-
-
 class ReviewSerializer(serializers.HyperlinkedModelSerializer):
     paths = serializers.HyperlinkedRelatedField(
         view_name='path_list',
@@ -46,3 +29,20 @@ class ReviewSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Review
         fields = ('name', 'description', 'paths', 'path_id')
+
+
+class PathSerializer(serializers.ModelSerializer):
+    reviews = ReviewSerializer(
+        # view_name='review_detail',
+        many=True,
+        read_only=True
+    )
+    path_url = serializers.ModelSerializer.serializer_url_field(
+        view_name='path_detail'
+    )
+
+    class Meta:
+        model = Path
+        fields = ('id', 'name', 'length', 'start_point',
+                  'end_point', 'elevation', 'route_type',
+                  'photo_url', 'reviews', 'path_url')
