@@ -1,44 +1,52 @@
-.park-container {
+.park-container,
+.path-container {
     display: flex;
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     margin: 100px auto;
 }
 
-.park-content {
+.park-content,
+.path-content {
     /* box-sizing: border-box;
     min-width: 200px;
     border: 1px solid #001e1d; */
+    margin-bottom: 30px;
     width: 25%;
 }
 
-.park-info {
+.park-info,
+.path-infomation {
     text-align: center;
 }
 
-.park-img {
+.park-img,
+.path-photo {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
 }
 
-.park-img img {
+.park-img img,
+.path-photo img {
     width: 90%;
     height: 300px;
     object-fit: cover;
 }
 
-.park-search {
+.park-search,
+.path-search {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.park-search h1 {
+.park-search h1,
+.path-search h1 {
     font-size: 2rem;
 }

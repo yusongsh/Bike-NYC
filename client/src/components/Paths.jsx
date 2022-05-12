@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import "../style/explore.css";
 
 function Paths({
   elevation,
@@ -28,7 +29,7 @@ function Paths({
           <p>{end_point}</p>
           <p>{length}</p>
           <p>{route_type}</p>
-          <div>
+          {/* <div>
             Reviews:
             {reviews.map((review, index) => {
               return (
@@ -38,7 +39,7 @@ function Paths({
                 </div>
               );
             })}
-          </div>
+          </div> */}
         </div>
       </div>
     </>

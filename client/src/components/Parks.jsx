@@ -1,5 +1,5 @@
 import React from "react";
-import "../style/parks.css";
+import "../style/explore.css";
 
 function Parks({ id, name, size, image }) {
   return (

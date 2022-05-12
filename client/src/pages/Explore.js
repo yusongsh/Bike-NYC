@@ -34,12 +34,12 @@ function Explore({ parks, paths }) {
         <h1>Explore</h1>
       </div>
 
-      <div className="park-search">
-        <h1 className="park-text">Search a Path</h1>
+      <div className="path-search">
+        <h1 className="path-text">Search a Path</h1>
         <form>
           <input
             type="text"
-            className="park-input"
+            className="path-input"
             placeholder="search"
             onChange={handleChangePath}
             style={{
@@ -51,11 +51,12 @@ function Explore({ parks, paths }) {
               marginTop: "0",
               marginLeft: "30px",
               color: "#001e1d",
+              textTransform: "none",
             }}
           ></input>
         </form>
       </div>
-      <div className="park-container">
+      <div className="path-container">
         {filteredPaths.map((path) => {
           return (
             <Paths
@@ -91,6 +92,7 @@ function Explore({ parks, paths }) {
               marginTop: "0",
               marginLeft: "30px",
               color: "#001e1d",
+              textTransform: "none",
             }}
           ></input>
         </form>
