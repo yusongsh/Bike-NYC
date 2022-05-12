@@ -35,19 +35,19 @@ function ContactForm() {
         <label>
           Name<span>*</span>
         </label>
-        <input type="text" name="from_name" />
+        <input type="text" name="from_name" required />
         <label>
           Email<span>*</span>
         </label>
-        <input type="email" name="email" />
+        <input type="email" name="email" required />
         <label>
           Subject<span>*</span>
         </label>
-        <input type="subject" name="subject" />
+        <input type="subject" name="subject" required />
         <label>
           Message<span>*</span>
         </label>
-        <textarea name="message" />
+        <textarea name="message" required />
         <div className="form-checkbox">
           <input style={{ marginBottom: "0" }} type="checkbox" value="Apple" />{" "}
           <span>
