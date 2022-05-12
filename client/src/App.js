@@ -25,10 +25,8 @@ function App() {
       // setLoading(false);
     };
     const loadPaths = async () => {
-      // setLoading(true);
       const res = await axios.get(`${API_URL}/paths`);
       setPath(res.data);
-      // setLoading(false);
     };
     loadParks();
     loadPaths();

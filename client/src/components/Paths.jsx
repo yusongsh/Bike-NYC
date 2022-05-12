@@ -1,4 +1,5 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 
 function Paths({
   elevation,
@@ -32,8 +33,8 @@ function Paths({
             {reviews.map((review, index) => {
               return (
                 <div key={index}>
-                  <h1>{review.name}</h1>
-                  <h1>{review.description}</h1>
+                  <p>{review.name}</p>
+                  <p>{review.description}</p>
                 </div>
               );
             })}

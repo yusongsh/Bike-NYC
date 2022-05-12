@@ -30,9 +30,12 @@ function Explore({ parks, paths }) {
   return (
     <>
       <Nav1 />
-      <h1>Explore</h1>
+      <div>
+        <h1>Explore</h1>
+      </div>
+
       <div className="park-search">
-        <h1 className="park-text">Search a Paths</h1>
+        <h1 className="park-text">Search a Path</h1>
         <form>
           <input
             type="text"

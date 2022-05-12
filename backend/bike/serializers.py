@@ -33,7 +33,6 @@ class ReviewSerializer(serializers.HyperlinkedModelSerializer):
 
 class PathSerializer(serializers.ModelSerializer):
     reviews = ReviewSerializer(
-        # view_name='review_detail',
         many=True,
         read_only=True
     )
