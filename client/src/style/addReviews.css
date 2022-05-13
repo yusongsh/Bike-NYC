@@ -1,0 +1,39 @@
+.addreview-container {
+    width: 100%;
+}
+
+.addreview-field {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    width: 80%;
+}
+
+.addreview-field label {
+    width: 50%;
+    padding-left: 30px;
+    font-size: .875rem;
+    font-weight: 600;
+}
+
+.addreview .addreview-field input {
+    background-color: #fffffe;
+    width: 100%;
+    padding: 0 20px;
+    color: #001e1d;
+    border: 1px solid #001e1d;
+}
+
+
+.reviewAddBtn {
+    background-color: #001e1d;
+    color: #fffffe;
+    font-size: 1rem;
+    padding: 15px 24px;
+    border: none;
+    margin: 20px 30px;
+}
+
+.reviewAddBtn:hover {
+    color: #f9bc60;
+}

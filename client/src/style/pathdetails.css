@@ -62,11 +62,12 @@
 .pathdetail-review {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
     width: 100%;
     margin-top: 100px;
     border-top: 1px solid #001e1d;
 }
+
+
 
 .pathdetail-review h3 {
     padding-left: 30px;

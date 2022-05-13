@@ -10,6 +10,7 @@ import photo from "../assest/Grogu.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeftLong } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import AddReview from "../components/AddReview";
 
 function PathDetails() {
   const [path, setPath] = useState("");
@@ -42,6 +43,7 @@ function PathDetails() {
             <img className="pathdetails-main" src={path.photo_url} alt=""></img>
             <div className="pathdetail-review">
               <h3>Reviews:</h3>
+              <AddReview />
               {path.reviews.map((review, index) => {
                 return (
                   <div className="detail-review" key={index}>
