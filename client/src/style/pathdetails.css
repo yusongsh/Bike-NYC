@@ -1,13 +1,104 @@
 .pathdetail-container {
-    background-color: teal;
     display: flex;
     flex-direction: row;
 }
 
 .pathdetail-left {
     flex: 60%;
+    border-right: 2px solid #001e1d;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .pathdetail-right {
-    flex: 40%;
+    width: 40%;
+    height: 800px;
+    position: sticky;
+    top: 0px;
+    background-color: #001e1d;
+}
+
+.pathdetail-right h5 {
+    padding: 50px 50px;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    color: #fffffe;
+}
+
+.pathdetail-right p {
+    padding: 0 50px;
+    font-size: .875rem;
+    margin: 1rem 0;
+    color: #fffffe;
+}
+
+.pathdetail-left h1 {
+    padding: 20px 30px;
+}
+
+.pathdetails-main {
+    padding: 20px 30px;
+    max-width: 750px;
+}
+
+.backarrow {
+    padding: 50px 30px 0;
+}
+
+.backarrow span {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.backarrow span:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    cursor: pointer;
+    color: #f9bc60;
+    transition: background-color .3s linear, color .3s linear;
+}
+
+.pathdetail-review {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%;
+    margin-top: 100px;
+    border-top: 1px solid #001e1d;
+}
+
+.pathdetail-review h3 {
+    padding-left: 30px;
+}
+
+.detail-review {
+    background-color: rgb(171, 209, 198, 0.2);
+    padding: 20px 30px;
+    border-top: 1px solid #001e1d;
+}
+
+.detail-review h4 {
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.detail-review p {
+    font-size: 1rem;
+    font-weight: 700;
+
+}
+
+.detail-user-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.detail-user-info img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
 }
