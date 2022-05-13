@@ -1,0 +1,13 @@
+.pathdetail-container {
+    background-color: teal;
+    display: flex;
+    flex-direction: row;
+}
+
+.pathdetail-left {
+    flex: 60%;
+}
+
+.pathdetail-right {
+    flex: 40%;
+}

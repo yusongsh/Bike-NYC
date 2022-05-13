@@ -44,4 +44,4 @@ class PathSerializer(serializers.ModelSerializer):
         model = Path
         fields = ('id', 'name', 'length', 'start_point',
                   'end_point', 'elevation', 'route_type',
-                  'photo_url', 'reviews', 'path_url')
+                  'photo_url', 'reviews', 'path_url', 'description')

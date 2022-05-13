@@ -22,6 +22,7 @@ class Path(models.Model):
     end_point = models.CharField(max_length=512)
     elevation = models.CharField(max_length=100)
     route_type = models.CharField(max_length=100)
+    description = models.TextField(null=True, blank=True)
     photo_url = models.TextField()
 
     def __str__(self):
