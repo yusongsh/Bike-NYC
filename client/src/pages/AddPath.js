@@ -100,7 +100,7 @@ function AddPath() {
             required
           ></textarea>
           <button onClick={handleSubmit} className="postButton">
-            Post My Project
+            Add a Path
           </button>
         </form>
       </div>

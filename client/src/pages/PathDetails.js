@@ -11,6 +11,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeftLong } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import AddReview from "../components/AddReview";
+import DeleteReview from "../components/DeleteReview";
 
 function PathDetails() {
   const [path, setPath] = useState("");
@@ -48,10 +49,11 @@ function PathDetails() {
                 return (
                   <div className="detail-review" key={index}>
                     <div className="detail-user-info">
-                      <img src={photo}></img>
+                      <img src={photo} alt=""></img>
                       <h4>{review.name}</h4>
                     </div>
                     <p>-{review.description}</p>
+                    <DeleteReview />
                   </div>
                 );
               })}
@@ -74,6 +76,9 @@ function PathDetails() {
             <p>
               Elevation: &nbsp;&nbsp;<strong>{path.elevation}</strong>
             </p>
+            <Link to={`/paths/${id}/update`}>
+              <button>Update this Path</button>
+            </Link>
           </div>
         </div>
         <Footer1 />

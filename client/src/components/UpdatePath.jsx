@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router";
 import axios from "axios";
 import { API_URL } from "../constants";
+import { Link } from "react-router-dom";
 
 function UpdatePath() {
   let navigate = useNavigate();
@@ -21,11 +22,11 @@ function UpdatePath() {
     console.log(res.data);
     setName(res.data.name);
     setLength(res.data.length);
-    setStartpoint(res.data.name);
-    setEndpoint(res.data.name);
-    setRoutetype(res.data.name);
-    setElevation(res.data.name);
-    setImage(res.data.name);
+    setStartpoint(res.data.start_point);
+    setEndpoint(res.data.end_point);
+    setRoutetype(res.data.route_type);
+    setElevation(res.data.elevation);
+    setImage(res.data.photo_url);
     setDescription(res.data.description);
   };
 
@@ -33,7 +34,91 @@ function UpdatePath() {
     loadPath();
   }, [id]);
 
-  return <div>UpdatePath</div>;
+  const UpdatePath = async () => {
+    let form = new FormData();
+    form.append("name", name);
+    form.append("length", length);
+    form.append("start_point", start_point);
+    form.append("end_point", end_point);
+    form.append("elevation", elevation);
+    form.append("route_type", route_type);
+    form.append("photo_url", photo_url);
+    form.append("description", description);
+
+    await axios.put(`${API_URL}/paths/${id}`, form).then((result) => {
+      console.log(result.text);
+      console.log("Path Updated");
+      window.location.reload();
+      alert("Path Updated");
+    });
+  };
+  return (
+    <div>
+      <form>
+        <label>Name of the path</label>
+        <input
+          onChange={(e) => setName(e.target.value)}
+          name="name"
+          value={name}
+          required
+        ></input>
+        <label>Path Length</label>
+        <input
+          onChange={(e) => setLength(e.target.value)}
+          name="length"
+          value={length}
+          required
+        ></input>
+        <label>Start Point</label>
+        <input
+          onChange={(e) => setStartpoint(e.target.value)}
+          name="start_point"
+          value={start_point}
+          required
+        ></input>
+        <label>End Point</label>
+        <input
+          onChange={(e) => setEndpoint(e.target.value)}
+          name="end_point"
+          value={end_point}
+          required
+        ></input>
+        <label>Route Type</label>
+        <input
+          onChange={(e) => setRoutetype(e.target.value)}
+          name="route_type"
+          value={route_type}
+          required
+        ></input>
+        <label>Elevation</label>
+        <input
+          onChange={(e) => setElevation(e.target.value)}
+          name="elevation"
+          value={elevation}
+          required
+        ></input>
+        <label>Photo_url</label>
+        <input
+          onChange={(e) => setImage(e.target.value)}
+          name="photo_url"
+          value={photo_url}
+          required
+        ></input>
+        <label>Description</label>
+        <textarea
+          onChange={(e) => setDescription(e.target.value)}
+          name="description"
+          value={description}
+          required
+        ></textarea>
+        <Link to={`/paths/${id}/`}>
+          <button onClick={UpdatePath} className="postButton">
+            Update this Path
+          </button>
+        </Link>
+      </form>
+    </div>
+  );
 }
 
 export default UpdatePath;
