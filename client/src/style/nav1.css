@@ -1,25 +1,19 @@
 .nav1 {
-    /* position: absolu; */
     top: 0px;
     z-index: 10;
-    /* background-color: #abd1c6; */
     display: flex;
     height: 6vh;
     border: 2px solid #001e1d;
-
 }
-
 
 
 .bike {
     background: url('../assest/Bike.png');
-    /* background-color: #f9bc60; */
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     width: 60px;
     height: 30px;
-    /* border-right: 8px solid #001e1d; */
 }
 
 .nav-left {
@@ -124,6 +118,7 @@
         border: none;
         border-radius: 5px;
         margin-top: 0;
+        z-index: 1000;
     }
 
     #hidden {
@@ -131,16 +126,18 @@
         left: 0;
         top: 0;
         height: 100vh;
-        background: linear-gradient(115deg, #abd1c6, #c3e4db);
+        background: #004643;
         width: 100vw;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        z-index: 1000;
     }
 
     .nav-left a {
-        color: #001e1d;
+        color: #f9bc60;
+        font-size: 2rem;
         background-color: rgb(0, 0, 0, 0);
         margin: 10px auto;
     }
