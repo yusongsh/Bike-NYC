@@ -12,6 +12,7 @@ import Featured from "./pages/Featured";
 import Privacy from "./pages/Privacy";
 import Credit from "./pages/Credit";
 import AddPath from "./pages/AddPath";
+import PathDetails from "./pages/PathDetails";
 
 function App() {
   const [parks, setPark] = useState([]);
@@ -50,6 +51,7 @@ function App() {
         <Route path="/credit" element={<Credit />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/add" element={<AddPath />} />
+        <Route path="/paths/:id/" element={<PathDetails />} />
       </Routes>
     </div>
   );

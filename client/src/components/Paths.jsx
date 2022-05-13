@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../style/explore.css";
 
 function Paths({
@@ -14,13 +14,13 @@ function Paths({
   photo,
   path_url,
 }) {
-  // console.log(reviews);
-
   return (
     <>
       <div className="path-content">
         <div className="path-photo">
-          <img src={photo} alt="" />
+          <Link to="/paths/:id/">
+            <img src={photo} alt="" />
+          </Link>
         </div>
         <div className="path-infomation">
           <h4>{name}</h4>
