@@ -14,6 +14,7 @@ import Credit from "./pages/Credit";
 import AddPath from "./pages/AddPath";
 import PathDetails from "./pages/PathDetails";
 import AddReview from "./components/AddReview";
+import UpdatePath from "./components/UpdatePath";
 
 function App() {
   const [parks, setPark] = useState([]);
@@ -54,6 +55,7 @@ function App() {
         <Route path="/add" element={<AddPath />} />
         <Route path="/add/review" element={<AddReview />} />
         <Route path="/paths/:id" element={<PathDetails />} />
+        <Route path="/paths/:id/update" element={<UpdatePath />} />
       </Routes>
     </div>
   );

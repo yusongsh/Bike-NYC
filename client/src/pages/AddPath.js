@@ -9,14 +9,13 @@ function AddPath() {
   let navigate = useNavigate();
 
   const [name, setName] = useState("");
-  //   const [description, setDescription] = useState("");
-  //   const [path_id, setPathid] = useState("");
   const [length, setLength] = useState("");
   const [start_point, setStartpoint] = useState("");
   const [end_point, setEndpoint] = useState("");
   const [route_type, setRoutetype] = useState("");
   const [elevation, setElevation] = useState("");
   const [photo_url, setImage] = useState("");
+  const [description, setDescription] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -31,6 +30,7 @@ function AddPath() {
     form.append("elevation", elevation);
     form.append("route_type", route_type);
     form.append("photo_url", photo_url);
+    form.append("description", description);
 
     await axios.post(`${API_URL}/paths/`, form);
 
@@ -47,7 +47,6 @@ function AddPath() {
           <input
             onChange={(e) => setName(e.target.value)}
             name="name"
-            // type="text"
             value={name}
             required
           ></input>
@@ -55,7 +54,6 @@ function AddPath() {
           <input
             onChange={(e) => setLength(e.target.value)}
             name="length"
-            // type="text"
             value={length}
             required
           ></input>
@@ -63,7 +61,6 @@ function AddPath() {
           <input
             onChange={(e) => setStartpoint(e.target.value)}
             name="start_point"
-            // type="text"
             value={start_point}
             required
           ></input>
@@ -71,7 +68,6 @@ function AddPath() {
           <input
             onChange={(e) => setEndpoint(e.target.value)}
             name="end_point"
-            // type="text"
             value={end_point}
             required
           ></input>
@@ -79,7 +75,6 @@ function AddPath() {
           <input
             onChange={(e) => setRoutetype(e.target.value)}
             name="route_type"
-            // type="text"
             value={route_type}
             required
           ></input>
@@ -87,7 +82,6 @@ function AddPath() {
           <input
             onChange={(e) => setElevation(e.target.value)}
             name="elevation"
-            // type="text"
             value={elevation}
             required
           ></input>
@@ -95,10 +89,16 @@ function AddPath() {
           <input
             onChange={(e) => setImage(e.target.value)}
             name="photo_url"
-            // type="text"
             value={photo_url}
             required
           ></input>
+          <label>Description</label>
+          <textarea
+            onChange={(e) => setDescription(e.target.value)}
+            name="description"
+            value={description}
+            required
+          ></textarea>
           <button onClick={handleSubmit} className="postButton">
             Post My Project
           </button>
