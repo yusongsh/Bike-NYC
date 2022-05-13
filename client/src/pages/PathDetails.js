@@ -53,7 +53,7 @@ function PathDetails() {
                       <h4>{review.name}</h4>
                     </div>
                     <p>-{review.description}</p>
-                    <DeleteReview />
+                    <DeleteReview id={review.id} />
                   </div>
                 );
               })}

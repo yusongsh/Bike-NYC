@@ -15,6 +15,7 @@ import AddPath from "./pages/AddPath";
 import PathDetails from "./pages/PathDetails";
 import AddReview from "./components/AddReview";
 import UpdatePath from "./components/UpdatePath";
+import DeleteReview from "./components/DeleteReview";
 
 function App() {
   const [parks, setPark] = useState([]);
@@ -56,6 +57,7 @@ function App() {
         <Route path="/add/review" element={<AddReview />} />
         <Route path="/paths/:id" element={<PathDetails />} />
         <Route path="/paths/:id/update" element={<UpdatePath />} />
+        <Route path="/review/:id/delete" element={<DeleteReview />} />
       </Routes>
     </div>
   );

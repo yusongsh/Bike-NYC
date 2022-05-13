@@ -28,7 +28,7 @@ class ReviewSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Review
-        fields = ('name', 'description', 'paths', 'path_id')
+        fields = ('id', 'name', 'description', 'paths', 'path_id')
 
 
 class PathSerializer(serializers.ModelSerializer):

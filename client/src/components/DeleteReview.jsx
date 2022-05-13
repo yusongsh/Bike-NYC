@@ -6,8 +6,7 @@ import "../style/addReviews.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 
-function AddPath() {
-  let { id } = useParams();
+function DeleteReview({ id }) {
   console.log(id);
 
   const handleDelete = async (e) => {
@@ -27,4 +26,4 @@ function AddPath() {
   );
 }
 
-export default AddPath;
+export default DeleteReview;
