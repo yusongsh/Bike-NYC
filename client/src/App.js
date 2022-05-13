@@ -51,7 +51,7 @@ function App() {
         <Route path="/credit" element={<Credit />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/add" element={<AddPath />} />
-        <Route path="/paths/:id/" element={<PathDetails />} />
+        <Route path="/paths/:id" element={<PathDetails />} />
       </Routes>
     </div>
   );

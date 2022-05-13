@@ -37,7 +37,7 @@ function Weather() {
       </div>
     );
   } else {
-    return <h6>Loading pls wait</h6>;
+    return <h6>Loading realling hard, please wait</h6>;
   }
 }
 
