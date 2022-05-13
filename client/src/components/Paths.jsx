@@ -24,12 +24,12 @@ function Paths({
         </div>
         <div className="path-infomation">
           <h4>{name}</h4>
-          <p>{elevation}</p>
+          <p>Path Length: {length}</p>
+          {/* <p>{elevation}</p>
           <p>{start_point}</p>
           <p>{end_point}</p>
-          <p>{length}</p>
-          <p>{route_type}</p>
-          {/* <div>
+          <p>{route_type}</p> 
+          <div>
             Reviews:
             {reviews.map((review, index) => {
               return (

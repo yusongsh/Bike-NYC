@@ -9,8 +9,8 @@ function Parks({ id, name, size, image }) {
           <img src={image} alt="" />
         </div>
         <div className="park-info">
-          <h3>{name}</h3>
-          <h5>Size: {size}</h5>
+          <h4>{name}</h4>
+          <p>Size: {size}</p>
         </div>
       </div>
     </>

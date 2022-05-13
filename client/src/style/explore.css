@@ -1,3 +1,4 @@
+/* Path,Park Component CSS */
 .park-container,
 .path-container {
     display: flex;
@@ -6,21 +7,45 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    margin: 100px auto;
+    margin: 0 auto;
+
 }
 
-.park-content,
+
+
 .path-content {
-    /* box-sizing: border-box;
+    box-sizing: border-box;
     min-width: 200px;
-    border: 1px solid #001e1d; */
-    margin-bottom: 30px;
+    border: 1px solid #001e1d;
+    /* margin-bottom: 30px; */
+    width: 25%;
+}
+
+.park-content {
+    box-sizing: border-box;
+    min-width: 200px;
+    border: 1px solid #001e1d;
+    /* margin-bottom: 30px; */
     width: 25%;
 }
 
 .park-info,
 .path-infomation {
     text-align: center;
+}
+
+.path-infomation p,
+.park-info p {
+    font-size: .875rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.path-infomation h4,
+.park-info h4 {
+    font-size: 1.125rem;
+    font-weight: 800;
+    margin-bottom: 10px;
 }
 
 .park-img,
@@ -44,9 +69,97 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
 }
 
-.park-search h1,
-.path-search h1 {
-    font-size: 2rem;
+.park-text,
+.path-text {
+    font-size: 1rem;
+}
+
+/* Page CSS  */
+.explore-header img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.section-1 {
+    margin-top: 0;
+}
+
+.section-1-top {
+    /* background-color: tomato; */
+    border-bottom: 2px solid #001e1d;
+}
+
+.section-1-top h1,
+.section-2-top h1 {
+    padding: 50px 30px 0;
+    margin: 0;
+}
+
+.section-1-top h3,
+.section-2-top h3 {
+    padding: 0 30px 50px 30px;
+}
+
+.section-1-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 2px solid #001e1d;
+}
+
+.path-search {
+    flex: 70%;
+    border-right: 2px solid #001e1d;
+    padding: 30px 0;
+}
+
+.section-1-bottom-right {
+    flex: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.section-bottom-right:hover {
+    background-color: #001e1d;
+}
+
+.section-1-bottom-right button {
+    background-color: #001e1d;
+    color: #fffffe;
+    font-size: 1rem;
+    padding: 15px 24px;
+    border: none;
+}
+
+.section-1-bottom-right button:hover {
+    color: #001e1d;
+    background-color: #f9bc60;
+}
+
+.section-2 {
+    border-top: 2px solid #001e1d;
+    border-bottom: 2px solid #001e1d;
+    display: flex;
+    flex-direction: row;
+}
+
+.section-2-top {
+    flex: 70%;
+}
+
+.park-search h1 {
+    margin-left: 30px;
+    font-size: 1rem;
+}
+
+.park-search {
+    flex: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-left: 2px solid #001e1d;
 }
