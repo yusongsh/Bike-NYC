@@ -18,16 +18,14 @@ function PathDetails() {
   const [path, setPath] = useState("");
   let { id } = useParams();
 
+  const getPath = async () => {
+    const res = await axios.get(`${API_URL}/paths/${id}`);
+    console.log(res.data);
+    setPath(res.data);
+  };
   useEffect(() => {
-    console.log("working");
-    const getPath = async () => {
-      const res = await axios.get(`${API_URL}/paths/${id}`);
-      console.log(res.data);
-      setPath(res.data);
-    };
     getPath();
   }, [id]);
-  // console.log(path);
 
   if (path) {
     return (
@@ -48,7 +46,7 @@ function PathDetails() {
 
             <div className="pathdetail-review">
               <h3>Reviews:</h3>
-              <AddReview />
+              <AddReview getPath={getPath} />
               {path.reviews.map((review, index) => {
                 return (
                   <div className="detail-review" key={index}>
@@ -60,7 +58,7 @@ function PathDetails() {
                       <p>-{review.description}</p>
                     </div>
                     <div>
-                      <DeleteReview id={review.id} />
+                      <DeleteReview getPath={getPath} id={review.id} />
                     </div>
                   </div>
                 );

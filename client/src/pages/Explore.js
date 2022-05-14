@@ -7,6 +7,7 @@ import Parks from "../components/Parks";
 import Paths from "../components/Paths";
 import "../style/explore.css";
 import Map from "../components/Map";
+import AddPath from "./AddPath";
 
 function Explore({ parks, paths }) {
   // console.log(parks);
@@ -88,6 +89,7 @@ function Explore({ parks, paths }) {
         {filteredPaths.map((path) => {
           return (
             <Paths
+              key={path.id}
               elevation={path.elevation}
               end_point={path.end_point}
               id={path.id}
@@ -147,6 +149,7 @@ function Explore({ parks, paths }) {
         {filteredParks.map((park) => {
           return (
             <Parks
+              key={park.id}
               id={park.id}
               name={park.name}
               size={park.park_size}

@@ -22,17 +22,17 @@ function App() {
   // const [loading, setLoading] = useState(false);
   const [paths, setPath] = useState([]);
 
+  const loadParks = async () => {
+    // setLoading(true);
+    const res = await axios.get(`${API_URL}/parks`);
+    setPark(res.data);
+    // setLoading(false);
+  };
+  const loadPaths = async () => {
+    const res = await axios.get(`${API_URL}/paths`);
+    setPath(res.data);
+  };
   useEffect(() => {
-    const loadParks = async () => {
-      // setLoading(true);
-      const res = await axios.get(`${API_URL}/parks`);
-      setPark(res.data);
-      // setLoading(false);
-    };
-    const loadPaths = async () => {
-      const res = await axios.get(`${API_URL}/paths`);
-      setPath(res.data);
-    };
     loadParks();
     loadPaths();
   }, []);
@@ -53,7 +53,7 @@ function App() {
         <Route path="/featured" element={<Featured />} />
         <Route path="/credit" element={<Credit />} />
         <Route path="/privacy" element={<Privacy />} />
-        <Route path="/add" element={<AddPath />} />
+        <Route path="/add" element={<AddPath loadpaths={loadPaths} />} />
         <Route path="/add/review" element={<AddReview />} />
         <Route path="/paths/:id" element={<PathDetails />} />
         <Route path="/paths/:id/update" element={<UpdatePath />} />

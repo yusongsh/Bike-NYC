@@ -7,9 +7,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 import swal from "sweetalert";
 import { useNavigate } from "react-router";
-import { useHistory } from "react";
 
-function AddPath() {
+function AddPath({ getPath }) {
   let navigate = useNavigate();
 
   let { id } = useParams();
@@ -22,14 +21,22 @@ function AddPath() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     let form = new FormData();
-    form.append("path_id", path_id);
+    form.append("path_id", id);
     form.append("description", description);
     form.append("name", name);
 
     await axios.post(`${API_URL}/reviews/`, form);
-
-    alert("review added");
+    swal("Great!", "You just left a review!", "success");
+    getPath();
   };
+
+  function ClearForm() {
+    setName();
+    setDescription();
+    setPathid();
+    setUpdate(false);
+  }
+
   return (
     <>
       <div className="addreview">
@@ -54,31 +61,14 @@ function AddPath() {
                 required
               ></input>
             </div>
-            <div className="addreview-field">
-              <label>
-                Path ID:
-                <span style={{ fontSize: "0.75rem" }}>
-                  (enter the ID shown)
-                </span>
-              </label>
-              <input
-                onChange={(e) => setPathid(e.target.value)}
-                name="path_id"
-                type="number"
-                placeholder={`${id}`}
-                value={path_id}
-                required
-              ></input>
-            </div>
             <button
-              onSubmit={() => navigate(`/paths/${id}`, { replace: true })}
               onClick={() => navigate(`/paths/${id}`, { replace: true })}
               className="reviewAddBtn"
             >
               Post My Review
             </button>
             <FontAwesomeIcon
-              onClick={() => setUpdate(false)}
+              onClick={() => ClearForm()}
               icon={faCircleXmark}
               size="lg"
             />

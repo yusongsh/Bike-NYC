@@ -7,7 +7,7 @@ import { API_URL } from "../constants";
 import swal from "sweetalert";
 import "../style/addpath.css";
 
-function AddPath() {
+function AddPath({ loadpaths }) {
   let navigate = useNavigate();
   const [name, setName] = useState("");
   const [length, setLength] = useState("");
@@ -17,8 +17,6 @@ function AddPath() {
   const [elevation, setElevation] = useState("");
   const [photo_url, setImage] = useState("");
   const [description, setDescription] = useState("");
-
-  const alertbox = () => {};
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -34,12 +32,8 @@ function AddPath() {
     form.append("description", description);
 
     await axios.post(`${API_URL}/paths/`, form);
-    swal({
-      content: <div>Hello world!</div>,
-      buttons: true,
-    });
+    loadpaths();
     navigate(`/explore`);
-    window.location.reload();
   };
 
   return (

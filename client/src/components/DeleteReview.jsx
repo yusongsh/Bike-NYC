@@ -7,16 +7,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
 import swal from "sweetalert";
 
-function DeleteReview({ id }) {
-  console.log(id);
+function DeleteReview({ id, getPath }) {
+  // console.log(id);
 
   const handleDelete = async (e) => {
     e.preventDefault();
-
     await axios.delete(`${API_URL}/reviews/${id}`);
-    alert("review deleted");
-    window.location.reload();
+    swal("review deleted");
+    getPath();
   };
+
   return (
     <div>
       <FontAwesomeIcon
@@ -25,7 +25,6 @@ function DeleteReview({ id }) {
         icon={faTrashCan}
         size="lg"
       />
-      {/* <button onClick={handleDelete}>Delete</button> */}
     </div>
   );
 }
