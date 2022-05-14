@@ -6,6 +6,7 @@ import ScrollToTop from "../components/ScrollToTop";
 import Parks from "../components/Parks";
 import Paths from "../components/Paths";
 import "../style/explore.css";
+import Map from "../components/Map";
 
 function Explore({ parks, paths }) {
   // console.log(parks);
@@ -101,6 +102,8 @@ function Explore({ parks, paths }) {
           );
         })}
       </div>
+
+      {/* <Map /> */}
 
       <div className="section-2">
         <div className="section-2-top">

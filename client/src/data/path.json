@@ -1,0 +1,132 @@
+{
+    
+    "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "PATH_ID": 1,
+        "NAME": "Central Park Loop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.782864, -73.965355]
+      }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+          "PATH_ID": 2,
+          "NAME": "Central Parl Loop(Short)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [40.573260, -73.884810]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "PATH_ID": 3,
+          "NAME": "Hudson River Greenway"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [40.705830, -74.016647]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "PATH_ID": 4,
+          "NAME": "Williamsburg Bridge"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [40.712818, -73.969078]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "PATH_ID": 5,
+          "NAME": "Central Parl Loop(Long)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [40.794515, -73.954394]
+        }
+      },
+
+      {
+        "type": "Feature",
+        "properties": {
+          "PATH_ID": 6,
+          "NAME": "Wards Island "
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [40.786190, -73.929280]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "PATH_ID": 7,
+          "NAME": "Pier 84 to City Island"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [40.847250, -73.786490]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "PATH_ID": 8,
+          "NAME": "Governors Island"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [40.689270, -74.020270]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "PATH_ID": 9,
+          "NAME": "The Brooklyn Waterfront Greenway"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [40.679792, -74.011384]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "PATH_ID": 10,
+          "NAME": "East River Waterfront"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [40.721686, -73.973699]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "PATH_ID": 11,
+          "NAME": "Ocean Parkway Bike Path"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [40.643540, -73.156517]
+        }
+      }
+
+    
+    ]
+}
+
+
+

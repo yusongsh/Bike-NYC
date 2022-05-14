@@ -12,6 +12,7 @@ import { faArrowLeftLong } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import AddReview from "../components/AddReview";
 import DeleteReview from "../components/DeleteReview";
+import WeatherFull from "../components/WeatherFull";
 
 function PathDetails() {
   const [path, setPath] = useState("");
@@ -42,18 +43,25 @@ function PathDetails() {
             </Link>
             <h1>{path.name}</h1>
             <img className="pathdetails-main" src={path.photo_url} alt=""></img>
+
+            <WeatherFull />
+
             <div className="pathdetail-review">
               <h3>Reviews:</h3>
               <AddReview />
               {path.reviews.map((review, index) => {
                 return (
                   <div className="detail-review" key={index}>
-                    <div className="detail-user-info">
-                      <img src={photo} alt=""></img>
-                      <h4>{review.name}</h4>
+                    <div>
+                      <div className="detail-user-info">
+                        <img src={photo} alt=""></img>
+                        <h4>{review.name}</h4>
+                      </div>
+                      <p>-{review.description}</p>
                     </div>
-                    <p>-{review.description}</p>
-                    <DeleteReview id={review.id} />
+                    <div>
+                      <DeleteReview id={review.id} />
+                    </div>
                   </div>
                 );
               })}

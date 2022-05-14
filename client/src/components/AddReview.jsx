@@ -7,10 +7,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 import swal from "sweetalert";
 import { useNavigate } from "react-router";
+import { useHistory } from "react";
 
 function AddPath() {
   let navigate = useNavigate();
+
   let { id } = useParams();
+  const [review, setReview] = useState([]);
   const [update, setUpdate] = useState(false);
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
@@ -24,9 +27,8 @@ function AddPath() {
     form.append("name", name);
 
     await axios.post(`${API_URL}/reviews/`, form);
-    window.location.reload();
-    swal("Great!", "Thanks for your feedback!", "success");
-    navigate(`/paths/${id}`);
+
+    alert("review added");
   };
   return (
     <>
@@ -68,7 +70,11 @@ function AddPath() {
                 required
               ></input>
             </div>
-            <button onSubmit={(e) => handleSubmit(e)} className="reviewAddBtn">
+            <button
+              onSubmit={() => navigate(`/paths/${id}`, { replace: true })}
+              onClick={() => navigate(`/paths/${id}`, { replace: true })}
+              className="reviewAddBtn"
+            >
               Post My Review
             </button>
             <FontAwesomeIcon

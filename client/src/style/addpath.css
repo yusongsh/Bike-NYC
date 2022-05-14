@@ -1,0 +1,83 @@
+.addpath-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.addpath-top img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.addpath-top {
+    position: relative;
+    text-align: center;
+    color: #001e1d;
+}
+
+.centered {
+    position: absolute;
+    font-size: 2rem;
+    font-weight: 800;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.addpath-bottom form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.addpath-form {
+    padding-top: 80px;
+}
+
+.addpath-form span {
+    color: #e16162;
+    font-weight: 800;
+    margin-left: .3rem;
+}
+
+.addpath-formfield {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+
+.addpath-formfield input,
+.addpath-formfield textarea {
+    margin-top: .3rem;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 1rem;
+    border: 1px solid #004643 !important;
+    background-color: #fffffe;
+    border: none;
+}
+
+.addpath-formfield textarea {
+    min-height: 12rem;
+}
+
+.addpath-formfield button {
+    background-color: #004643;
+    border: none;
+    color: #f9bc60;
+    font-size: 1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 2rem 0 4rem;
+    height: 4rem;
+    width: 15rem;
+
+}
+
+.addpath-formfield label {
+    font-size: .875rem;
+    font-weight: 700;
+}

@@ -4,7 +4,7 @@ import { API_URL } from "../constants";
 import { useParams } from "react-router-dom";
 import "../style/addReviews.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
+import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
 import swal from "sweetalert";
 
 function DeleteReview({ id }) {
@@ -14,26 +14,18 @@ function DeleteReview({ id }) {
     e.preventDefault();
 
     await axios.delete(`${API_URL}/reviews/${id}`);
-    swal({
-      title: "Are you sure?",
-      text: "Once deleted, you will not be able to recover this imaginary file!",
-      icon: "warning",
-      buttons: true,
-      dangerMode: true,
-    }).then((willDelete) => {
-      if (willDelete) {
-        swal("Poof! Your imaginary file has been deleted!", {
-          icon: "success",
-        });
-      } else {
-        swal("Your imaginary file is safe!");
-      }
-    });
-    // window.location.reload();
+    alert("review deleted");
+    window.location.reload();
   };
   return (
-    <div className="addreview">
-      <button onClick={handleDelete}>Delete</button>
+    <div>
+      <FontAwesomeIcon
+        style={{ color: "red" }}
+        onClick={handleDelete}
+        icon={faTrashCan}
+        size="lg"
+      />
+      {/* <button onClick={handleDelete}>Delete</button> */}
     </div>
   );
 }
