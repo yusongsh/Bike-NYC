@@ -24,11 +24,10 @@ function AddPath() {
     await axios.post(`${API_URL}/reviews/`, form).then((result) => {
       console.log(result.text);
       console.log("review added");
-      alert("Review Added");
+      alert("Hello world!");
       window.location.reload();
+      e.target.reset();
     });
-
-    e.target.reset();
   };
   return (
     <>

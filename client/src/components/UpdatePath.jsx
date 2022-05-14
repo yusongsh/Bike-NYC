@@ -4,6 +4,7 @@ import { useNavigate } from "react-router";
 import axios from "axios";
 import { API_URL } from "../constants";
 import { Link } from "react-router-dom";
+import swal from "sweetalert";
 
 function UpdatePath() {
   let navigate = useNavigate();
@@ -34,7 +35,8 @@ function UpdatePath() {
     loadPath();
   }, [id]);
 
-  const UpdatePath = async () => {
+  const UpdatePath = async (e) => {
+    e.preventDefault();
     let form = new FormData();
     form.append("name", name);
     form.append("length", length);
@@ -45,12 +47,9 @@ function UpdatePath() {
     form.append("photo_url", photo_url);
     form.append("description", description);
 
-    await axios.put(`${API_URL}/paths/${id}`, form).then((result) => {
-      console.log(result.text);
-      console.log("Path Updated");
-      window.location.reload();
-      alert("Path Updated");
-    });
+    await axios.put(`${API_URL}/paths/${id}`, form);
+    swal("Good job!", "You just update the path!", "success");
+    navigate(`/paths/${id}`);
   };
   return (
     <div>
@@ -111,11 +110,9 @@ function UpdatePath() {
           value={description}
           required
         ></textarea>
-        <Link to={`/paths/${id}/`}>
-          <button onClick={UpdatePath} className="postButton">
-            Update this Path
-          </button>
-        </Link>
+        <button onClick={(e) => UpdatePath(e)} className="postButton">
+          Update this Path
+        </button>
       </form>
     </div>
   );
