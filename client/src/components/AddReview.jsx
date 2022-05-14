@@ -5,8 +5,11 @@ import { useParams } from "react-router-dom";
 import "../style/addReviews.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
+import swal from "sweetalert";
+import { useNavigate } from "react-router";
 
 function AddPath() {
+  let navigate = useNavigate();
   let { id } = useParams();
   const [update, setUpdate] = useState(false);
   const [name, setName] = useState("");
@@ -16,18 +19,14 @@ function AddPath() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     let form = new FormData();
-    setPathid(id);
     form.append("path_id", path_id);
     form.append("description", description);
     form.append("name", name);
 
-    await axios.post(`${API_URL}/reviews/`, form).then((result) => {
-      console.log(result.text);
-      console.log("review added");
-      alert("Hello world!");
-      window.location.reload();
-      e.target.reset();
-    });
+    await axios.post(`${API_URL}/reviews/`, form);
+    window.location.reload();
+    swal("Great!", "Thanks for your feedback!", "success");
+    navigate(`/paths/${id}`);
   };
   return (
     <>
@@ -46,7 +45,6 @@ function AddPath() {
             <div className="addreview-field">
               <label>Your Review</label>
               <input
-                // className="review-textarea"
                 onChange={(e) => setDescription(e.target.value)}
                 name="description"
                 value={description}
@@ -70,7 +68,7 @@ function AddPath() {
                 required
               ></input>
             </div>
-            <button onClick={handleSubmit} className="reviewAddBtn">
+            <button onSubmit={(e) => handleSubmit(e)} className="reviewAddBtn">
               Post My Review
             </button>
             <FontAwesomeIcon

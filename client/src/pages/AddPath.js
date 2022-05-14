@@ -4,10 +4,12 @@ import Footer1 from "../components/Footer1";
 import { useNavigate } from "react-router";
 import axios from "axios";
 import { API_URL } from "../constants";
+import { useParams } from "react-router-dom";
+import swal from "sweetalert";
 
 function AddPath() {
   let navigate = useNavigate();
-
+  const { id } = useParams();
   const [name, setName] = useState("");
   const [length, setLength] = useState("");
   const [start_point, setStartpoint] = useState("");
@@ -33,8 +35,8 @@ function AddPath() {
     form.append("description", description);
 
     await axios.post(`${API_URL}/paths/`, form);
-
-    navigate("/explore");
+    swal("Good job!", "You just update the path!", "success");
+    navigate(`/explore`);
     window.location.reload();
   };
   return (
@@ -99,7 +101,7 @@ function AddPath() {
             value={description}
             required
           ></textarea>
-          <button onClick={handleSubmit} className="postButton">
+          <button onClick={(e) => handleSubmit(e)} className="postButton">
             Add a Path
           </button>
         </form>
