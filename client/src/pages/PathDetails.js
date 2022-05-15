@@ -93,18 +93,7 @@ function PathDetails() {
               Elevation: &nbsp;&nbsp;<strong>{path.elevation}</strong>
             </p>
             <div className="edit-path-btn">
-              {/* <Link to={`/paths/${id}/update`}>
-                <FontAwesomeIcon
-                  style={{ color: "#f9bc60" }}
-                  icon={faPenToSquare}
-                  size="lg"
-                />
-                &nbsp;&nbsp;
-                <span style={{ color: "#f9bc60", fontWeight: "600" }}>
-                  Edit this Path
-                </span>
-              </Link> */}
-              <UpdatePath />
+              <UpdatePath getPath={getPath} />
             </div>
           </div>
         </div>

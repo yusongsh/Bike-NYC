@@ -28,6 +28,7 @@ function AddPath({ getPath }) {
     await axios.post(`${API_URL}/reviews/`, form);
     swal("Great!", "You just left a review!", "success");
     getPath();
+    ClearForm();
   };
 
   function ClearForm() {

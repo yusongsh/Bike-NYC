@@ -8,13 +8,13 @@ function ContactForm() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    alert("Uncomment line 17 first");
+    // alert("Uncomment line 17 first");
     emailjs
       .sendForm(
-        "service_irba3vc",
-        "template_zo6pefi",
-        form.current
-        // "IZsZeTaGJi9ZVtHox"
+        "service_uzoq2lc",
+        "template_apc4yqb",
+        form.current,
+        "ZHjXYxcVxVwVDSINi"
         //uncommnet line above to enable form
       )
       .then(

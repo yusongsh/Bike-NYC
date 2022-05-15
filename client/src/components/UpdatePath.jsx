@@ -11,7 +11,7 @@ import {
   faPenToSquare,
 } from "@fortawesome/free-solid-svg-icons";
 
-function UpdatePath() {
+function UpdatePath({ getPath }) {
   let navigate = useNavigate();
   const { id } = useParams();
   const [edit, setEdit] = useState(false);
@@ -56,9 +56,11 @@ function UpdatePath() {
     await axios.put(`${API_URL}/paths/${id}`, form);
     swal("Good job!", "You just update the path!", "success");
     navigate(`/paths/${id}`);
+    getPath();
+    ClosePopOut();
   };
 
-  function ClearForm() {
+  function ClosePopOut() {
     setEdit(false);
   }
   return (
@@ -66,7 +68,7 @@ function UpdatePath() {
       {edit ? (
         <div className="updatepath-container">
           <div className="updateform-area">
-            <form className="updateform-form">
+            <form className="updateform-form" onSubmit={UpdatePath}>
               <div className="updateform-row1">
                 <div className="updatepath-formfield">
                   <label>Name of the path</label>
@@ -155,8 +157,9 @@ function UpdatePath() {
 
               <div className="updatepath-btn">
                 <button
-                  onClick={(e) => UpdatePath(e)}
-                  // className="updatepath-btn"
+                // onClick={(e) => UpdatePath(e)}
+                // onClick={() => ClosePopOut()}
+                // className="updatepath-btn"
                 >
                   Update this Path
                 </button>
@@ -164,7 +167,7 @@ function UpdatePath() {
 
               <div className="updatepath-close">
                 <FontAwesomeIcon
-                  onClick={() => ClearForm()}
+                  onClick={() => ClosePopOut()}
                   icon={faCircleXmark}
                   size="2xl"
                   style={{ color: "#f9bc60" }}
