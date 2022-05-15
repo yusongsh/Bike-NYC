@@ -37,3 +37,12 @@
     transform: translateX(-50%);
   }
 }
+
+
+@media (max-width: 60em) {
+  .footer {
+    position: fixed !important;
+    bottom: 0;
+    left: 0;
+  }
+}

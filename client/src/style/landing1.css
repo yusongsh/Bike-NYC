@@ -1,10 +1,6 @@
 .landing {
     width: 100%;
     position: relative;
-    /* height: calc(100vh-104px);
-    position: relative; */
-    /* bottom: 50px; */
-    /* max-height: 100vh; */
     overflow: hidden;
     display: flex;
     flex-direction: row;
@@ -32,7 +28,7 @@
 
 
 .left-top1 {
-    width: 50%;
+    /* width: 50%; */
     min-width: 200px;
     display: flex;
     align-items: center;
@@ -41,7 +37,8 @@
 }
 
 .left-top1 h1 {
-    font-size: 4rem;
+    font-size: 5.8rem;
+    text-transform: uppercase;
 }
 
 .left-top2 {
@@ -67,6 +64,12 @@
 .landing-left-bottom {
     height: 60vh;
     min-height: 400px;
+}
+
+.landing-left-bottom img {
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
 }
 
 .weather-main {
@@ -327,5 +330,68 @@
 
     to {
         -webkit-transform: rotate(359deg);
+    }
+}
+
+
+
+@media (max-width: 80em) {
+    .left-top1 h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 60em) {
+    .left-top1 h1 {
+        font-size: 6rem;
+    }
+
+    .landing {
+        flex-direction: column;
+    }
+
+    .landing-right {
+        width: 100%;
+        height: auto;
+    }
+
+    .landing-left {
+        width: 100%;
+        height: auto;
+        padding-bottom: 50px
+    }
+
+
+    .landing-container {
+        padding-bottom: 6vh;
+    }
+
+    .path-info {
+        width: 22vw;
+    }
+
+    .spiralContainer {
+        position: absolute;
+        top: 12%;
+        right: 80%;
+        background-color: rgb(255, 255, 254, 0);
+        z-index: -1;
+    }
+}
+
+
+@media (max-width: 30em) {
+    .left-top1 h1 {
+        font-size: 2.3rem;
+    }
+}
+
+
+
+
+
+@media (min-width: 120em) {
+    .left-top1 h1 {
+        font-size: 8rem;
     }
 }

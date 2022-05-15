@@ -7,13 +7,6 @@
 
 }
 
-/* .each-slide>div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-size: cover;
-  height: 300px;
-} */
 
 .each-slide span {
   padding: 20px;
@@ -61,4 +54,11 @@
   font-weight: 500;
   position: relative;
   bottom: 53px;
+}
+
+@media (max-width: 60em) {
+  .slide-container {
+    width: 100%
+  }
+
 }

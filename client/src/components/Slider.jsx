@@ -56,12 +56,12 @@ class Slider extends Component {
               </div>
             ))}
           </Slide>
-          <button onClick={this.back} type="button">
+          {/* <button onClick={this.back} type="button">
             <FontAwesomeIcon icon={faArrowLeftLong} />
           </button>
           <button onClick={this.next} type="button">
             <FontAwesomeIcon icon={faArrowRightLong} />
-          </button>
+          </button> */}
         </div>
 
         <div className="slide-container buttons"></div>
