@@ -22,6 +22,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 60%;
 }
 
 .addpath-bottom form {
@@ -58,6 +59,8 @@
     border: 1px solid #004643 !important;
     background-color: #fffffe;
     border: none;
+    color: #001e1d;
+    text-transform: none;
 }
 
 .addpath-formfield textarea {
@@ -80,4 +83,20 @@
 .addpath-formfield label {
     font-size: .875rem;
     font-weight: 700;
+}
+
+
+
+@media (max-width: 60em) {
+    .centered {
+        width: 80%;
+    }
+
+    .addpath-formfield {
+        width: 75%;
+    }
+
+    .addpath-formfield input {
+        height: 20px;
+    }
 }
