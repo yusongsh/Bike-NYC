@@ -47,7 +47,7 @@
 
 .pathdetails-main {
     padding: 20px 30px;
-    max-width: 2000px;
+    max-width: 600px;
 }
 
 .backarrow {
@@ -167,5 +167,12 @@
 
     .pathdetail-right p {
         padding: 0 30px;
+    }
+}
+
+
+@media (min-width:120em) {
+    .pathdetails-main {
+        max-width: 1000px;
     }
 }

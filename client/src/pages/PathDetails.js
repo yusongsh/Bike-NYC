@@ -16,6 +16,7 @@ import { Link } from "react-router-dom";
 import AddReview from "../components/AddReview";
 import DeleteReview from "../components/DeleteReview";
 import WeatherFull from "../components/WeatherFull";
+import UpdatePath from "../components/UpdatePath";
 
 function PathDetails() {
   const [path, setPath] = useState("");
@@ -92,7 +93,7 @@ function PathDetails() {
               Elevation: &nbsp;&nbsp;<strong>{path.elevation}</strong>
             </p>
             <div className="edit-path-btn">
-              <Link to={`/paths/${id}/update`}>
+              {/* <Link to={`/paths/${id}/update`}>
                 <FontAwesomeIcon
                   style={{ color: "#f9bc60" }}
                   icon={faPenToSquare}
@@ -102,8 +103,8 @@ function PathDetails() {
                 <span style={{ color: "#f9bc60", fontWeight: "600" }}>
                   Edit this Path
                 </span>
-                {/* <button>Update this Path</button> */}
-              </Link>
+              </Link> */}
+              <UpdatePath />
             </div>
           </div>
         </div>

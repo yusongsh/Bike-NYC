@@ -5,10 +5,16 @@ import axios from "axios";
 import { API_URL } from "../constants";
 import { Link } from "react-router-dom";
 import swal from "sweetalert";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faArrowLeftLong,
+  faPenToSquare,
+} from "@fortawesome/free-solid-svg-icons";
 
 function UpdatePath() {
   let navigate = useNavigate();
   const { id } = useParams();
+  const [edit, setEdit] = useState(false);
   const [name, setName] = useState("");
   const [length, setLength] = useState("");
   const [start_point, setStartpoint] = useState("");
@@ -53,67 +59,83 @@ function UpdatePath() {
   };
   return (
     <div>
-      <form>
-        <label>Name of the path</label>
-        <input
-          onChange={(e) => setName(e.target.value)}
-          name="name"
-          value={name}
-          required
-        ></input>
-        <label>Path Length</label>
-        <input
-          onChange={(e) => setLength(e.target.value)}
-          name="length"
-          value={length}
-          required
-        ></input>
-        <label>Start Point</label>
-        <input
-          onChange={(e) => setStartpoint(e.target.value)}
-          name="start_point"
-          value={start_point}
-          required
-        ></input>
-        <label>End Point</label>
-        <input
-          onChange={(e) => setEndpoint(e.target.value)}
-          name="end_point"
-          value={end_point}
-          required
-        ></input>
-        <label>Route Type</label>
-        <input
-          onChange={(e) => setRoutetype(e.target.value)}
-          name="route_type"
-          value={route_type}
-          required
-        ></input>
-        <label>Elevation</label>
-        <input
-          onChange={(e) => setElevation(e.target.value)}
-          name="elevation"
-          value={elevation}
-          required
-        ></input>
-        <label>Photo_url</label>
-        <input
-          onChange={(e) => setImage(e.target.value)}
-          name="photo_url"
-          value={photo_url}
-          required
-        ></input>
-        <label>Description</label>
-        <textarea
-          onChange={(e) => setDescription(e.target.value)}
-          name="description"
-          value={description}
-          required
-        ></textarea>
-        <button onClick={(e) => UpdatePath(e)} className="postButton">
-          Update this Path
-        </button>
-      </form>
+      {edit ? (
+        <form>
+          <label>Name of the path</label>
+          <input
+            onChange={(e) => setName(e.target.value)}
+            name="name"
+            value={name}
+            required
+          ></input>
+          <label>Path Length</label>
+          <input
+            onChange={(e) => setLength(e.target.value)}
+            name="length"
+            value={length}
+            required
+          ></input>
+          <label>Start Point</label>
+          <input
+            onChange={(e) => setStartpoint(e.target.value)}
+            name="start_point"
+            value={start_point}
+            required
+          ></input>
+          <label>End Point</label>
+          <input
+            onChange={(e) => setEndpoint(e.target.value)}
+            name="end_point"
+            value={end_point}
+            required
+          ></input>
+          <label>Route Type</label>
+          <input
+            onChange={(e) => setRoutetype(e.target.value)}
+            name="route_type"
+            value={route_type}
+            required
+          ></input>
+          <label>Elevation</label>
+          <input
+            onChange={(e) => setElevation(e.target.value)}
+            name="elevation"
+            value={elevation}
+            required
+          ></input>
+          <label>Photo_url</label>
+          <input
+            onChange={(e) => setImage(e.target.value)}
+            name="photo_url"
+            value={photo_url}
+            required
+          ></input>
+          <label>Description</label>
+          <textarea
+            onChange={(e) => setDescription(e.target.value)}
+            name="description"
+            value={description}
+            required
+          ></textarea>
+          <button onClick={(e) => UpdatePath(e)} className="postButton">
+            Update this Path
+          </button>
+        </form>
+      ) : (
+        // <Link to={`/paths/${id}/update`}>
+        <div onClick={() => setEdit(true)} style={{ cursor: "pointer" }}>
+          <FontAwesomeIcon
+            style={{ color: "#f9bc60" }}
+            icon={faPenToSquare}
+            size="lg"
+          />
+          &nbsp;&nbsp;
+          <span style={{ color: "#f9bc60", fontWeight: "600" }}>
+            Edit this Path
+          </span>
+        </div>
+        // </Link>
+      )}
     </div>
   );
 }

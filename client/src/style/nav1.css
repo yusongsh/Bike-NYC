@@ -156,3 +156,9 @@
         border-top: 2px solid #001e1d;
     }
 }
+
+@media (min-width:120em) {
+    .nav-left {
+        justify-content: space-around;
+    }
+}
