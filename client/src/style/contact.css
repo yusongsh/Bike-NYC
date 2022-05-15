@@ -10,21 +10,20 @@
 .contact {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    width: 40%;
+    width: 60%;
 }
 
 .contact-container {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    max-width: 60%;
     justify-content: center;
     align-items: center;
     margin: 100px auto 20px;
 }
 
 .contact-container h1 {
-    font-size: 4.25rem;
+    font-size: clamp(2rem, 1rem + 10vw, 5rem);
     text-transform: uppercase;
     margin: 0 auto 1vw
 }
@@ -83,5 +82,57 @@ input:last-child {
     padding: 0;
     color: #001e1d;
     font-weight: 500;
+}
 
+
+
+
+
+
+@media (max-width: 60em) {
+    .contact-container h1 {
+        font-size: 4rem;
+    }
+
+    .contact-container {
+        max-width: 75%;
+        margin: 100px auto 40px;
+        text-align: center;
+    }
+
+    .contact {
+        width: 70%;
+        padding-bottom: 0;
+    }
+
+    .form-checkbox {
+        margin-bottom: .5rem;
+    }
+
+}
+
+@media (max-width: 30em) {
+    .contact-container h1 {
+        font-size: 3rem;
+    }
+
+    .contact-container {
+        max-width: 85%;
+        margin: 60px auto 20px;
+        text-align: center;
+    }
+
+    .contact {
+        width: 80%;
+        padding-bottom: 50px;
+    }
+
+    .ContactForm {
+        padding-bottom: 50px;
+    }
+
+    .form-checkbox {
+        font-size: .75rem;
+        margin-bottom: .3rem;
+    }
 }

@@ -45,6 +45,7 @@ function AddPath({ getPath }) {
             <div className="addreview-field">
               <label>Your Name</label>
               <input
+                style={{ textTransform: "none" }}
                 onChange={(e) => setName(e.target.value)}
                 name="name"
                 value={name}
@@ -54,6 +55,7 @@ function AddPath({ getPath }) {
             <div className="addreview-field">
               <label>Your Review</label>
               <input
+                style={{ textTransform: "none" }}
                 onChange={(e) => setDescription(e.target.value)}
                 name="description"
                 value={description}

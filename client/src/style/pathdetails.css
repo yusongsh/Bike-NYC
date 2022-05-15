@@ -11,9 +11,17 @@
     align-items: flex-start;
 }
 
+.pathdetail-left-content {
+    /* background-color: #f9bc60; */
+    width: 100%;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #001e1d;
+}
+
 .pathdetail-right {
     width: 40%;
-    height: 800px;
+    min-height: 800px;
+    height: 100%;
     position: sticky;
     top: 0px;
     background-color: #001e1d;
@@ -63,7 +71,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 60px;
     border-top: 1px solid #001e1d;
 }
 
@@ -104,4 +112,10 @@
     object-fit: cover;
     border-radius: 50%;
     margin-right: 10px;
+}
+
+.edit-path-btn {
+    padding: 50px 50px;
+    font-size: 1rem;
+    line-height: 1.4rem;
 }

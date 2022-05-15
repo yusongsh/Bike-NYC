@@ -33,6 +33,7 @@ function AddPath({ loadpaths }) {
 
     await axios.post(`${API_URL}/paths/`, form);
     loadpaths();
+    swal("Woooo!", "You Just Add a New Path", "success");
     navigate(`/explore`);
   };
 

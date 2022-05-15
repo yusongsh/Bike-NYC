@@ -8,7 +8,10 @@ import Footer1 from "../components/Footer1";
 import "../style/pathdetails.css";
 import photo from "../assest/Grogu.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeftLong } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowLeftLong,
+  faPenToSquare,
+} from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import AddReview from "../components/AddReview";
 import DeleteReview from "../components/DeleteReview";
@@ -39,8 +42,14 @@ function PathDetails() {
                 &nbsp;&nbsp;<span>Go Back</span>
               </div>
             </Link>
-            <h1>{path.name}</h1>
-            <img className="pathdetails-main" src={path.photo_url} alt=""></img>
+            <div className="pathdetail-left-content">
+              <h1>{path.name}</h1>
+              <img
+                className="pathdetails-main"
+                src={path.photo_url}
+                alt=""
+              ></img>
+            </div>
 
             <WeatherFull />
 
@@ -82,9 +91,20 @@ function PathDetails() {
             <p>
               Elevation: &nbsp;&nbsp;<strong>{path.elevation}</strong>
             </p>
-            <Link to={`/paths/${id}/update`}>
-              <button>Update this Path</button>
-            </Link>
+            <div className="edit-path-btn">
+              <Link to={`/paths/${id}/update`}>
+                <FontAwesomeIcon
+                  style={{ color: "#f9bc60" }}
+                  icon={faPenToSquare}
+                  size="lg"
+                />
+                &nbsp;&nbsp;
+                <span style={{ color: "#f9bc60", fontWeight: "600" }}>
+                  Edit this Path
+                </span>
+                {/* <button>Update this Path</button> */}
+              </Link>
+            </div>
           </div>
         </div>
         <Footer1 />
