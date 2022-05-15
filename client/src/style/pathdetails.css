@@ -47,7 +47,7 @@
 
 .pathdetails-main {
     padding: 20px 30px;
-    max-width: 750px;
+    max-width: 2000px;
 }
 
 .backarrow {
@@ -118,4 +118,54 @@
     padding: 50px 50px;
     font-size: 1rem;
     line-height: 1.4rem;
+}
+
+
+
+@media (max-width: 80em) {
+    .pathdetail-left {
+        width: 50%;
+    }
+
+    .pathdetail-right {
+        width: 50%;
+    }
+
+    .pathdetail-left-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .pathdetail-left-content img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 45em) {
+    .pathdetail-container {
+        flex-direction: column-reverse;
+    }
+
+    .pathdetail-left-content h1 {
+        font-size: 1.2rem;
+    }
+
+    .pathdetail-left,
+    .pathdetail-right {
+        width: 100%;
+    }
+
+    .pathdetail-right {
+        position: relative;
+        height: auto;
+        min-height: 0;
+    }
+
+    .pathdetail-right h5,
+    .edit-path-btn {
+        padding: 50px 30px;
+    }
+
+    .pathdetail-right p {
+        padding: 0 30px;
+    }
 }

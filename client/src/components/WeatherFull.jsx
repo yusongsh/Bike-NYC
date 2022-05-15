@@ -26,14 +26,10 @@ function Weather() {
             <div className="weather-full">
               <div className="weather-full-row1">
                 <div className="weather-ful-row1-left">
-                  <img
-                    src={forecastday.day.condition.icon}
-                    alt=""
-                    style={{ width: "100px", padding: "0", margin: "0" }}
-                  ></img>
+                  <img src={forecastday.day.condition.icon} alt="" />
                 </div>
                 <div className="weather-ful-row1-right">
-                  <p style={{ fontSize: "1.125rem" }}>
+                  <p className="weather-condition">
                     {forecastday.day.condition.text}
                   </p>
                   <p>

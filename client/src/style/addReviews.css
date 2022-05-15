@@ -38,3 +38,15 @@
 .reviewAddBtn:hover {
     color: #f9bc60;
 }
+
+@media (max-width: 60em) {
+    .addreview-field {
+        flex-direction: column;
+    }
+
+    .addreview .addreview-field input {
+        width: 80%;
+        margin-left: 30px;
+        margin-top: .4rem;
+    }
+}
