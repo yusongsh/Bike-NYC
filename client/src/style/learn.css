@@ -199,3 +199,68 @@
     color: #fffffe;
     transition: background-color .3s linear, color .3s linear;
 }
+
+
+@media (max-width: 60em) {
+    .learn-left {
+        width: 55%;
+    }
+
+    .learn-mid {
+        display: none;
+    }
+}
+
+
+@media (max-width: 50em) {
+    .learn-hero {
+        display: block;
+        position: relative;
+
+    }
+
+    .learn-left {
+        width: 100%;
+    }
+
+    .learn-right {
+        width: 85%;
+    }
+
+    .card1 {
+        border-top: 2px solid #001e1d;
+    }
+
+    .cards {
+        position: relative;
+        top: 650px;
+        height: 600px;
+    }
+
+    .card-content,
+    .card2-p,
+    .card1-p,
+    .card3-p,
+    .card4-p {
+        flex: 50%;
+    }
+
+    .learn-container {
+        padding-bottom: 700px;
+    }
+}
+
+@media (max-width: 30em) {
+
+    .card2-p,
+    .card1-p,
+    .card3-p,
+    .card4-p {
+        display: none;
+    }
+
+    .cards {
+        top: 700px;
+    }
+
+}
