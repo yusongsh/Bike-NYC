@@ -90,72 +90,67 @@
 .shop-thin-media {
     background-image: url('https://assets.specialized.com/i/specialized/ROAD-4267_AETHOS_LC_1?$hybris-pdp-photo-carousel$');
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: center;
     background-size: cover;
-    height: 260px;
-    /* object-fit: contain; */
+    width: 100%;
+    min-height: 250px;
 }
 
 .shop-thin-media2 {
     background-image: url('https://images.giant-bicycles.com/b_white,c_pad,h_850,q_80/r53nze36dx9k9yxmdlzm/MY22TCRAdvancedSL1Disc_ColorAStarryNight.jpg');
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: center;
     background-size: cover;
-    height: 260px;
+    width: 100%;
+    min-height: 250px;
 }
 
 .shop-thin-media3 {
     background-image: url('https://trek.scene7.com/is/image/TrekBicycleProducts/DomanePlusLT9_22_35761_A_Portrait?$responsive-pjpg$&cache=on,on&wid=1920&hei=1440');
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: center;
     background-size: cover;
-    height: 260px;
+    width: 100%;
+    min-height: 250px;
 }
 
 .shop-thin-media4 {
     background-image: url('https://embed.widencdn.net/img/dorelrl/d2dahjxeqy/2000px@1x/C22_C25572U_Moterra_Neo_Crb_LT_2_BBQ_PD.png');
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: center;
     background-size: cover;
-    height: 260px;
+    width: 100%;
+    min-height: 250px;
 }
 
 .shop-thin-media5 {
     background-image: url('https://images.ctfassets.net/tu8gkjqcgjw9/W1XziIctDK5l1LbJviLXU/abc65c2309f90f113045f56c13675675/Super73_RX_Accessories_1920x1080.jpg?w=1920&h=1080&q=85&fm=webp');
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: center;
     background-size: cover;
-    height: 260px;
+    width: 100%;
+    min-height: 250px;
 }
 
 .shop-thin-media6 {
     background-image: url('https://www.colnago.com/media/atelier-middle-banner.jpg');
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: center;
     background-size: cover;
-    height: 260px;
+    width: 100%;
+    min-height: 250px;
 }
 
 .shop-thin-media7 {
     background-image: url('https://cdn.shopify.com/s/files/1/0232/3305/products/State_Bicycle_Co_4130-MatteBlack_Mirror_FixedGear_Single-Speed_-10.jpg?v=1649192707');
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: center;
     background-size: cover;
-    height: 260px;
+    width: 100%;
+    min-height: 250px;
 }
 
 
-
-
-
-/* .rental-thin {
-    width: 35%;
-    height: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    flex-direction: column;
-} */
 
 .rental-Container {
     display: flex;
@@ -168,9 +163,7 @@
     padding-bottom: 300px;
 }
 
-/* .rental-wide-text {
-    padding-bottom: 300px;
-} */
+
 
 .rental-wide-media {
     background-image: url('https://images.unsplash.com/photo-1420641519650-9d7d0ea0a829?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1474&q=80');
@@ -186,7 +179,9 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 260px;
+    min-height: 260px;
+    max-width: 100%;
+    height: auto;
 }
 
 .rental-thin-media1 {
@@ -194,7 +189,9 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 260px;
+    min-height: 260px;
+    max-width: 100%;
+    height: auto;
 }
 
 .rental-thin-media2 {
@@ -202,7 +199,9 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 260px;
+    min-height: 260px;
+    max-width: 100%;
+    height: auto;
 }
 
 .rental-thin-media3 {
@@ -210,5 +209,104 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 260px;
+    min-height: 260px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+@media (max-width: 60em) {
+    .Shop-Container {
+        margin-top: 0px;
+    }
+
+    .shop-thin-media,
+    .shop-thin-media2,
+    .shop-thin-media3,
+    .shop-thin-media4,
+    .shop-thin-media5,
+    .shop-thin-media6,
+    .shop-thin-media7,
+    .rental-thin-media,
+    .rental-thin-media1,
+    .rental-thin-media2,
+    .rental-thin-media3 {
+        min-height: 200px;
+    }
+
+}
+
+
+@media (max-width: 50em) {
+
+
+    .shop-wide,
+    .rental-wide {
+        width: 100%;
+        position: relative;
+        margin-bottom: 100px;
+        min-height: 500px;
+    }
+
+    .shop-thin {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        padding-top: 200px;
+        align-items: center;
+    }
+
+    .rental-Container {
+        border-top: 2px solid #001e1d;
+        margin-top: 0px
+    }
+
+    .shop-thin-main {
+        margin-bottom: 0px;
+    }
+
+    .shop-thin-media,
+    .shop-thin-media2,
+    .shop-thin-media3,
+    .shop-thin-media4,
+    .shop-thin-media5,
+    .shop-thin-media6,
+    .shop-thin-media7,
+    .rental-thin-media,
+    .rental-thin-media1,
+    .rental-thin-media2,
+    .rental-thin-media3 {
+        min-height: 340px;
+    }
+}
+
+
+@media (max-width: 30em) {
+    .rental-Container {
+        padding-bottom: 0;
+    }
+
+    .social-icon {
+        display: none;
+    }
+
+    .shop-thin-media,
+    .shop-thin-media2,
+    .shop-thin-media3,
+    .shop-thin-media4,
+    .shop-thin-media5,
+    .shop-thin-media6,
+    .shop-thin-media7,
+    .rental-thin-media,
+    .rental-thin-media1,
+    .rental-thin-media2,
+    .rental-thin-media3 {
+        min-height: 200px;
+    }
+
+    .rental-wide-media,
+    .shop-wide-media {
+        background-position: 80% 0%;
+    }
 }
