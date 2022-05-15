@@ -53,29 +53,27 @@ function Landing() {
           <div className="landing-right">
             <div className="landing-right-top">
               <div className="right-top1">
-                <div className="right-top1-up" style={{ top: "0px" }}>
+                <div className="right-top1-up">
                   <Link to="/featured">
-                    <h5 style={{ marginTop: "0px", top: "8px" }}>
-                      Featured Paths
-                    </h5>
+                    <h5>Featured Paths</h5>
                   </Link>
                 </div>
 
                 <div className="right-top1-down">
                   <Link to="">
-                    <div className="path-info">
+                    <div className="path-info path-info-hide">
                       <img src={img1} alt="central park" />
                       <h4>Central Park Loop</h4>
                     </div>
                   </Link>
                   <Link to="">
-                    <div className="path-info">
+                    <div className="path-info path-info-show">
                       <img src={img2} alt="hudson river greenway" />
                       <h4>Hudson River Greenway</h4>
                     </div>
                   </Link>
                   <Link to="">
-                    <div className="path-info">
+                    <div className="path-info path-info-hide">
                       <img src={img3} alt="central park" />
                       <h4>Brooklyn Bridge</h4>
                     </div>

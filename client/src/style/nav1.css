@@ -87,23 +87,17 @@
 
 .nav-left a:hover,
 .nav-right a:hover {
-    /* background-color: #001e1d; */
     color: #f9bc60;
     transition: background-color .3s linear, color .3s linear;
 }
 
-@media only screen and (max-width: 1060px) {
-    /* .nav1 {
-        padding: 10px 20px
-    } */
-}
 
 .hidden-menu button {
     display: none;
 }
 
 
-@media only screen and (max-width: 860px) {
+@media (max-width: 60em) {
     .hidden-menu button {
         display: flex;
         position: absolute;
@@ -154,5 +148,11 @@
 
     .nav-middle {
         padding: 10px 20px
+    }
+
+    .nav1 {
+        border: none;
+        border-bottom: 2px solid #001e1d;
+        border-top: 2px solid #001e1d;
     }
 }

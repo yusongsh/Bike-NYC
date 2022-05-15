@@ -343,7 +343,7 @@
 
 @media (max-width: 60em) {
     .left-top1 h1 {
-        font-size: 6rem;
+        font-size: 6.7rem;
     }
 
     .landing {
@@ -361,6 +361,18 @@
         padding-bottom: 50px
     }
 
+    .right-top1-up {
+        position: relative;
+        height: 20px;
+    }
+
+    .right-top1 {
+        justify-content: space-around;
+    }
+
+    .path-info {
+        height: 90%;
+    }
 
     .landing-container {
         padding-bottom: 6vh;
@@ -377,12 +389,120 @@
         background-color: rgb(255, 255, 254, 0);
         z-index: -1;
     }
+
+    .right-bottom1 h2 {
+        margin: 100px 0;
+        padding: 0 30px;
+    }
+
+    .left-top2 h5, .right-top1 h5, .right-bottom1 h5, .bottom2-top h5 {
+        font-size: 1rem;
+    }
 }
 
 
+@media (max-width: 45em) {
+    .left-top1 h1 {
+        font-size: 4.5rem;
+    }
+
+    .right-top2 {
+        display: none;
+    }
+
+    .landing-left {
+        padding-bottom: 0px;
+    }
+}
+
 @media (max-width: 30em) {
     .left-top1 h1 {
-        font-size: 2.3rem;
+        font-size: 4rem;
+    }
+
+    .landing-left-top {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .landing-left {
+        height: 100%;
+    }
+
+    .left-top1 {
+        width: 100%;
+        border-bottom: 2px solid #001e1d;
+    }
+
+    .left-top2 {
+        flex-direction: row;
+        display: flex;
+        width: 100%;
+        padding: 30px 0;
+        border-left: none;
+        border-bottom: 2px solid #001e1d;
+    }
+
+    .left-top2-up {
+        display: none;
+    }
+
+    .left-top2-down {
+        flex: 50%;
+        /* padding-left: 20%; */
+    }
+
+    .landing-left-bottom {
+        height: auto;
+        min-height: 200px;
+        position: relative;
+        border-bottom: 2px solid #001e1d;
+    }
+
+    .landing-left-top {
+        border-bottom: none;
+        height: auto;
+    }
+
+    .spiralContainer {
+        display: none;
+    }
+
+    .path-info-hide {
+        display: none;
+    }
+
+    .path-info-show {
+        width: 70vw;
+    }
+
+    .right-top1 {
+        height: auto;
+    }
+
+    .landing-right-bottom {
+        padding-top: 200px;
+        flex-direction: column;
+        border-right: none;
+    }
+
+    .right-bottom2 {
+        height: 800px;
+        /* padding-top: 20px; */
+    }
+
+    .right-bottom1 {
+        border-right: none;
+        border-bottom: 2px solid #001e1d;
+        height: auto;
+    }
+
+    .bottom2-bottom {
+        display: none;
+    }
+
+    .right-bottom1 h2, .right-bottom2 h2 {
+        font-size: 2rem;
     }
 }
 
