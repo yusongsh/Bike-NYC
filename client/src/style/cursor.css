@@ -4,7 +4,15 @@
     width: 20px;
     height: 20px;
     background-color: #e16162;
+    /* Jeremy's gift */
+    /* background-image: url('../assest/jeremy.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px; */
     /* border: 1px solid black; */
+
     pointer-events: none;
     overflow: hidden;
     transform: translate3d(0, 0, 0);
