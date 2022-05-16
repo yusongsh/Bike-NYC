@@ -23,6 +23,7 @@
     
 <!-- ![demo](demo.png) -->
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a6d6a581-2a28-4361-8019-bf49a8725d10/deploy-status)](https://genuine-strudel-a580d7.netlify.app/)
 
 ## 🚲 About this project (please read!)
 
