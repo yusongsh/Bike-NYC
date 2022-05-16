@@ -55,8 +55,11 @@ React, Django
 - Your code should be properly indented, spaced, and within code blocks. DO NOT leave in commented out code that was left unused (bad practice).
 - Be deployed
 
-###ScreenShots of website:
+### ScreenShots of website:
+
 ![ScreenShot](./client/src/assest/Screen%20Shot%202022-05-16%20at%2010.52.13%20AM.png)
+
 ![ScreenShot](./client/src/assest/Screen%20Shot%202022-05-16%20at%2010.52.32%20AM.png)
 ![ScreenShot](./client/src/assest/Screen%20Shot%202022-05-16%20at%2010.52.42%20AM.png)
-![ScreenShot](./client/src/assest/Screen%20Shot%202022-05-16%20at%2010.52.57%20AM.png)
+
+## <img src="./client/src/assest/Screen%20Shot%202022-05-16%20at%2010.52.57%20AM.png" width="400">
