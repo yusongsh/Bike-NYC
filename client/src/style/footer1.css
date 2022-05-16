@@ -63,10 +63,12 @@
     margin-bottom: 15px;
     font-size: .875rem;
     font-weight: 600;
+    cursor: none;
 }
 
 .footer-right-col2 a {
     margin-right: 25px;
+    cursor: none;
 }
 
 

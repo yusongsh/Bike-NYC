@@ -16,6 +16,7 @@ import PathDetails from "./pages/PathDetails";
 import AddReview from "./components/AddReview";
 import UpdatePath from "./components/UpdatePath";
 import DeleteReview from "./components/DeleteReview";
+import { Cursor } from "./components/Cursor";
 
 function App() {
   const [parks, setPark] = useState([]);
@@ -41,6 +42,7 @@ function App() {
 
   return (
     <div className="App">
+      <Cursor />
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/learn" element={<Learn />} />

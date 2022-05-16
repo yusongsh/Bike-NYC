@@ -58,6 +58,10 @@
     /* height: 80%; */
     position: relative;
     top: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 
@@ -136,12 +140,13 @@
 
 .right-top1-up {
     position: absolute;
-    height: 50%;
+    height: 58%;
 }
 
 .right-top2 a:hover {
     color: #fffffe;
     transition: background-color .2s linear, color .2s linear;
+    cursor: none;
 }
 
 .right-top1-down {
@@ -513,5 +518,17 @@
 @media (min-width: 120em) {
     .left-top1 h1 {
         font-size: 8rem;
+    }
+
+    .spiralContainer {
+        bottom: 39%;
+        right: 22%;
+    }
+
+    .left-top2 h5,
+    .right-top1 h5,
+    .right-bottom1 h5,
+    .bottom2-top h5 {
+        font-size: 1rem;
     }
 }

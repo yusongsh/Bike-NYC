@@ -2,6 +2,7 @@ import React from "react";
 import Nav1 from "../components/Nav1";
 import Footer1 from "../components/Footer1";
 import ScrollToTop from "../components/ScrollToTop";
+import "../style/featured.css";
 
 function Featured() {
   return (

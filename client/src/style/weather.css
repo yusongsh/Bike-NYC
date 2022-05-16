@@ -1,0 +1,9 @@
+.weather img {
+    width: 5rem;
+}
+
+.weather p {
+    font-size: 1rem;
+    margin: 2px;
+    font-weight: 600;
+}

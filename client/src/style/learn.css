@@ -199,6 +199,7 @@
 .social-icon a:hover {
     color: #fffffe;
     transition: background-color .3s linear, color .3s linear;
+    cursor: none;
 }
 
 

@@ -1,3 +1,8 @@
+html,
+body {
+    cursor: none !important;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     height: 100vh;
@@ -13,6 +18,7 @@ h5 {
 a {
     text-decoration: none;
     color: #001e1d;
+    cursor: none;
 }
 
 .active {

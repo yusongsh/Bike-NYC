@@ -60,7 +60,7 @@ function Landing() {
                 </div>
 
                 <div className="right-top1-down">
-                  <Link to="">
+                  <Link to="paths/7">
                     <div className="path-info path-info-hide">
                       <img src={img1} alt="central park" />
                       <h4>Central Park Loop</h4>
@@ -119,7 +119,6 @@ function Landing() {
               </div>
               <div class="spiralContainer">
                 <img id="loading" src={spin} alt="" />
-                {/* <div class="spiral"></div> */}
               </div>
               <div className="right-bottom2">
                 <div className="bottom2-top">
