@@ -35,10 +35,9 @@ Build with the latest version of React and Django. ***BIKE - NYC***  is a simple
     
 ### Tech Stack
 
-React, Django, Material UI
+React, Django
     
     
 ### MVP:
 -  working full-stack app with functional frontend and backend
--  Three models: Trails, Parks, Bikes
--  Be deployed
+-  Four models: Trails, Parks, Bikes, Reviews
