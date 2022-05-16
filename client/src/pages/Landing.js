@@ -54,7 +54,7 @@ function Landing() {
             <div className="landing-right-top">
               <div className="right-top1">
                 <div className="right-top1-up">
-                  <Link to="/featured">
+                  <Link to="">
                     <h5>Featured Paths</h5>
                   </Link>
                 </div>
@@ -66,13 +66,13 @@ function Landing() {
                       <h4>Central Park Loop</h4>
                     </div>
                   </Link>
-                  <Link to="">
+                  <Link to="paths/1">
                     <div className="path-info path-info-show">
                       <img src={img2} alt="hudson river greenway" />
                       <h4>Hudson River Greenway</h4>
                     </div>
                   </Link>
-                  <Link to="">
+                  <Link to="paths/55">
                     <div className="path-info path-info-hide">
                       <img src={img3} alt="central park" />
                       <h4>Brooklyn Bridge</h4>
