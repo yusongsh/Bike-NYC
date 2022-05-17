@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 import "../style/contact.css";
 import { Link } from "react-router-dom";
+import swal from "sweetalert";
 
 function ContactForm() {
   const form = useRef();
@@ -21,7 +22,7 @@ function ContactForm() {
         (result) => {
           console.log(result.text);
           console.log("messgae sent");
-          alert("FORM SUBMITTED");
+          swal("FORM SUBMITTED", "success");
         },
         (error) => {
           console.log(error.text);
@@ -53,7 +54,7 @@ function ContactForm() {
           <span>
             I agree to Bike NYC’s{" "}
             <Link
-              to=""
+              to="/privacy"
               style={{
                 textDecoration: "underline",
                 textUnderlineOffset: "0.3rem",
