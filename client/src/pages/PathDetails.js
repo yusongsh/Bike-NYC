@@ -93,7 +93,8 @@ function PathDetails() {
               Elevation: &nbsp;&nbsp;<strong>{path.elevation}</strong>
             </p>
             <div className="edit-path-btn">
-              <UpdatePath getPath={getPath} />
+              {/* This following block is UpdatePathDetail, disabled to avoid deleting whole database */}
+              {/* <UpdatePath getPath={getPath} /> */}
             </div>
           </div>
         </div>

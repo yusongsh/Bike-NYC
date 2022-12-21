@@ -18,6 +18,7 @@ function Weather() {
     loadWeather();
   }, []);
   console.log(weather);
+
   if (weather && weather.current && weather.forecast) {
     return (
       <div className="weather-full-container">
