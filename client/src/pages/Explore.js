@@ -12,20 +12,20 @@ import AddPath from "./AddPath";
 function Explore({ parks, paths }) {
   // console.log(parks);
 
-  const [searchpark, setSearchPark] = useState("");
+  // const [searchpark, setSearchPark] = useState("");
   const [searchpath, setsearchPath] = useState("");
 
-  const handleChangePark = (e) => {
-    setSearchPark(e.target.value);
-  };
+  // const handleChangePark = (e) => {
+  //   setSearchPark(e.target.value);
+  // };
 
   const handleChangePath = (e) => {
     setsearchPath(e.target.value);
   };
 
-  const filteredParks = parks.filter((park) =>
-    park.name.toLowerCase().includes(searchpark.toLowerCase())
-  );
+  // const filteredParks = parks.filter((park) =>
+  //   park.name.toLowerCase().includes(searchpark.toLowerCase())
+  // );
   const filteredPaths = paths.filter((path) =>
     path.name.toLowerCase().includes(searchpath.toLowerCase())
   );
@@ -41,7 +41,7 @@ function Explore({ parks, paths }) {
       </div>
       <div className="section-1">
         <div className="section-1-top">
-          <h1>Some of The Best Bike Paths in New York City</h1>
+          <h1>Best Bike Paths in New York City</h1>
           <h3>
             New Yorkers love to spend their time outdoors. And nothing excites
             them more than the start of spring, when they can flock to the
@@ -79,7 +79,7 @@ function Explore({ parks, paths }) {
           </div>
           <div className="section-1-bottom-right">
             <Link to="/add">
-              <button>Add My Fav Bike Path</button>
+              <button>Add New Bike Path</button>
             </Link>
           </div>
         </div>
@@ -107,7 +107,7 @@ function Explore({ parks, paths }) {
 
       {/* <Map /> */}
 
-      <div className="section-2">
+      {/* <div className="section-2">
         <div className="section-2-top">
           <h1>Our Favrite Parks in New York City</h1>
           <h3>
@@ -157,7 +157,7 @@ function Explore({ parks, paths }) {
             />
           );
         })}
-      </div>
+      </div> */}
 
       <ScrollToTop />
       <Footer1 />
